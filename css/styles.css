@@ -1,62 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+root {
+  --rc-red: #e0202a;
+  --rc-red-dark: #a50d14;
+  --rc-red-deep: #6e070c;
+  --rc-black: #0b0b0c;
+  --rc-surface: #111113;
+  --rc-surface-2: #26262a;
+  --rc-border: #2c2c31;
+  --rc-white: #ffffff;
+  --rc-text-soft: #d4d4d8;
+  --rc-text-mute: #a1a1aa;
+  --rc-gradient: linear-gradient(160deg, #e0202a 0%, #a50d14 55%, #6e070c 100%);
+
+  /* Variables de Bootstrap personalizadas */
+  --bs-body-bg: var(--rc-black);
+  --bs-body-color: var(--rc-white);
+  --bs-body-font-family: "Plus Jakarta Sans", sans-serif;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-/* Aquí asumo que ya tienes tu bloque :root con las variables arriba */
-
-/* Utilidades estructurales */
-.hero-max-width {
-  max-width: 1000px;
-}
-
-/* Fondos utilizando tus variables */
-.bg-gradient-custom {
-  background: var(--rc-gradient);
-}
-
-.bg-surface {
-  background-color: var(--rc-surface);
-}
-
-.bg-rc-red {
-  background-color: var(--rc-red);
-  color: var(--rc-white);
-}
-
-/* Tipografía y colores de texto */
-.workshop-subtitle {
-  font-size: 0.9rem;
-  letter-spacing: 0.5px;
-}
-
-.text-soft {
-  color: var(--rc-text-soft);
-}
-
-.text-rc-black {
-  color: var(--rc-black);
-}
-
-/* Botón personalizado negro */
-.btn-rc-black {
-  background-color: var(--rc-black);
-  color: var(--rc-white);
-  border: none;
-}
-
-.btn-rc-black:hover {
-  background-color: #1a1a1c; /* Un tono apenas más claro para el efecto hover */
-  color: var(--rc-white);
-}
-
-/* Color para los iconos */
-.text-rc-red {
-  color: var(--rc-red);
-}
-
-/* Color para el texto secundario pequeño */
-.text-mute {
-  color: var(--rc-text-mute);
-}
+/* css SAMIR */

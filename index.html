@@ -13,6 +13,13 @@
       rel="stylesheet"
     />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe"
@@ -74,86 +81,101 @@
       </nav>
     </header>
     <main>
-      <section>
+      <section
+        class="bg-black text-white d-flex justify-content-center align-items-center vh-100"
+      >
         <div class="container">
-          <div
-            class="row mx-auto rounded-4 overflow-hidden bg-gradient-custom hero-max-widht"
-          >
-            <p class="mb-2 workshop-subtitle">
-              WORKSHOP <strong>ENTADAS LIMITADAS</strong>
-            </p>
-            <h1 class="display-4 fw-bold mb-4 lh-1">
-              ¿POR DÓNDE EMPIEZO A <br /><span class="text-rc-black"
-                >PROGRAMAR?</span
-              >
-            </h1>
-            <p class="mb-5 text-soft fs-5 w-75">
-              Una tarde con diez speakers de Rolling Code School para ordenar
-              tus primeros pasos: qué aprender, cómo practicar y cómo mostrar lo
-              que sabés.
-            </p>
-            <div class="d-flex gap-3 flex-wrap">
-              <a
-                href="#"
-                class="btn btn-rc-black rounded-pill px-4 py-2 fw-bold"
-                >Comprar entrada</a
-              >
-              <a
-                href="#"
-                class="btn btn-outline-light rounded-pill px-4 py-2 fw-bold"
-                >Ver agenda</a
-              >
+          <div class="workshop-card row mx-auto rounded-4 overflow-hidden">
+            <!-- Sección Izquierda (Texto y Botones) -->
+            <div
+              class="col-md-7 p-5 d-flex flex-column justify-content-center text-white"
+            >
+              <p class="workshop-subtitle mb-2">
+                WORKSHOP <strong>ENTRADAS LIMITADAS</strong>
+              </p>
+              <h1 class="workshop-title display-4 fw-bold mb-4 lh-1">
+                ¿POR DÓNDE EMPIEZO A <br /><span class="text-dark-gradient"
+                  >PROGRAMAR?</span
+                >
+              </h1>
+              <p class="workshop-description mb-5">
+                Una tarde con diez speakers de Rolling Code School para ordenar
+                tus primeros pasos: qué aprender, cómo practicar y cómo mostrar
+                lo que sabés.
+              </p>
+              <div class="d-flex gap-3 flex-wrap">
+                <a href="#" class="btn btn-buy rounded-pill px-4 py-2 fw-bold"
+                  >Comprar entrada</a
+                >
+                <a
+                  href="#"
+                  class="btn btn-agenda rounded-pill px-4 py-2 fw-bold"
+                  >Ver agenda</a
+                >
+              </div>
             </div>
-          </div>
-          <div
-            class="col-md-5 p-5 d-flex align-items-center justify-content-center"
-          >
-            <div class="rounded-4 p-4 w-100 border border-secondary bg-surface">
-              <div class="d-flex align-items-start mb-4">
-                <i
-                  class="fa-regular fa-calendar text-rc-red fs-4 me-3 mt-1"
-                ></i>
-                <div>
-                  <h4 class="mb-0 fw-bold text-white">JUE 19/11</h4>
-                  <p class="mb-0 fs-5 text-white">18.00 hs</p>
+
+            <!-- Sección Derecha (Detalles) -->
+            <div
+              class="col-md-5 p-5 d-flex align-items-center justify-content-center"
+            >
+              <div class="details-card rounded-4 p-4 w-100">
+                <!-- Fecha y Hora -->
+                <div class="detail-item d-flex align-items-start mb-4">
+                  <div class="detail-icon me-3 mt-1">
+                    <i class="fa-regular fa-calendar text-danger fs-4"></i>
+                  </div>
+                  <div>
+                    <h4 class="mb-0 fw-bold">JUE 19/11</h4>
+                    <p class="mb-0 fs-5">18.00 hs</p>
+                  </div>
                 </div>
-              </div>
 
-              <hr class="border-secondary mb-4" />
-              <div class="d-flex align-items-start mb-4">
-                <i
-                  class="fa-solid fa-location-dot text-rc-red fs-4 me-3 mt-1"
-                ></i>
-                <div>
-                  <h5 class="mb-0 fw-bold text-white">Rolling Code School</h5>
-                  <p class="mb-0 small text-mute">Gral. Paz 576, Entrepiso</p>
+                <hr class="border-secondary mb-4" />
+
+                <!-- Ubicación -->
+                <div class="detail-item d-flex align-items-start mb-4">
+                  <div class="detail-icon me-3 mt-1">
+                    <i class="fa-solid fa-location-dot text-danger fs-4"></i>
+                  </div>
+                  <div>
+                    <h5 class="mb-0 fw-bold">Rolling Code School</h5>
+                    <p class="mb-0 text-muted small">
+                      Gral. Paz 576, Entrepiso
+                    </p>
+                  </div>
                 </div>
-              </div>
 
-              <hr class="border-secondary mb-4" />
+                <hr class="border-secondary mb-4" />
 
-              <div class="d-flex align-items-start mb-4">
-                <i class="fa-solid fa-ticket text-rc-red fs-4 me-3 mt-1"></i>
-                <div>
-                  <h5 class="mb-0 fw-bold text-white">
-                    Entradas desde $15.000
-                  </h5>
-                  <p class="mb-0 small text-mute">Early Bird hasta el 31/10</p>
+                <!-- Precio -->
+                <div class="detail-item d-flex align-items-start mb-4">
+                  <div class="detail-icon me-3 mt-1">
+                    <i class="fa-solid fa-ticket text-danger fs-4"></i>
+                  </div>
+                  <div>
+                    <h5 class="mb-0 fw-bold">Entradas desde $15.000</h5>
+                    <p class="mb-0 text-muted small">
+                      Early Bird hasta el 31/10
+                    </p>
+                  </div>
                 </div>
-              </div>
 
-              <div class="d-flex gap-2 flex-wrap mt-3">
-                <span
-                  class="badge border border-secondary text-light rounded-pill px-3 py-2 fw-normal"
-                  >Presencial</span
-                >
-                <span
-                  class="badge border border-secondary text-light rounded-pill px-3 py-2 fw-normal"
-                  >Virtual</span
-                >
-                <span class="badge bg-rc-red rounded-pill px-3 py-2 fw-normal"
-                  >Cupos limitados</span
-                >
+                <!-- Etiquetas -->
+                <div class="d-flex gap-2 flex-wrap mt-3">
+                  <span
+                    class="badge badge-outline rounded-pill px-3 py-2 fw-normal"
+                    >Presencial</span
+                  >
+                  <span
+                    class="badge badge-outline rounded-pill px-3 py-2 fw-normal"
+                    >Virtual</span
+                  >
+                  <span
+                    class="badge badge-danger rounded-pill px-3 py-2 fw-normal"
+                    >Cupos limitados</span
+                  >
+                </div>
               </div>
             </div>
           </div>
