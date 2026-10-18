@@ -26,3 +26,9 @@ root {
 }
 
 /* css SAMIR */
+.workshop-card {
+  background: var(--rc-gradient);
+  border-radius: 2rem;
+  max-width: 1200px;
+  min-height: 500px; /* temporal */
+}
