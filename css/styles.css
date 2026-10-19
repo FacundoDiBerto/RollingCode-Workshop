@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 
-root {
+:root {
   --rc-red: #e0202a;
   --rc-red-dark: #a50d14;
   --rc-red-deep: #6e070c;
@@ -12,8 +12,6 @@ root {
   --rc-text-soft: #d4d4d8;
   --rc-text-mute: #a1a1aa;
   --rc-gradient: linear-gradient(160deg, #e0202a 0%, #a50d14 55%, #6e070c 100%);
-
-  /* Variables de Bootstrap personalizadas */
   --bs-body-bg: var(--rc-black);
   --bs-body-color: var(--rc-white);
   --bs-body-font-family: "Plus Jakarta Sans", sans-serif;
@@ -27,8 +25,64 @@ root {
 
 /* css SAMIR */
 .workshop-card {
-  background: var(--rc-gradient);
+  background: var(--rc-gradient); /* Esta línea es clave para el fondo rojo */
   border-radius: 2rem;
   max-width: 1200px;
-  min-height: 500px; /* temporal */
+  color: var(--rc-white);
+}
+body {
+  background-color: var(--rc-black);
+  color: var(--rc-white);
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+.workshop-label {
+  font-size: 16px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.main-title {
+  font-size: clamp(40px, 6vw, 88px);
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: -1.5px;
+  text-transform: uppercase;
+}
+.btn-buy,
+.btn-agenda {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  border-radius: 999px; /* Forma de píldora */
+  min-height: 52px; /* Alto mínimo según especificaciones */
+  padding: 0 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-buy {
+  background-color: var(--rc-black);
+  color: var(--rc-white);
+  border: none;
+}
+.btn-buy:hover {
+  background-color: #222;
+  color: var(--rc-white);
+}
+
+.btn-agenda {
+  background-color: transparent;
+  color: var(--rc-white);
+  border: 2px solid var(--rc-white);
+}
+
+.btn-agenda:hover {
+  background-color: var(--rc-white);
+  color: var(--rc-black);
+}
+.container {
+  max-width: 1200px;
 }
