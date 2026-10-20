@@ -27,3 +27,11 @@
 .container {
   max-width: 1200px;
 }
+
+/* Navbar */
+
+.nav-logo {
+  height: 60px;
+  width: auto;
+}
+
