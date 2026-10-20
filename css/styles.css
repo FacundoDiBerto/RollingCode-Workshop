@@ -35,3 +35,17 @@
   width: auto;
 }
 
+.btn-comprar {
+  background-color: var(--rc-red);
+  padding: 10px 24px;
+  border-radius: 999px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-comprar:hover {
+  background-color: var(--rc-red-dark);
+}
+
+
