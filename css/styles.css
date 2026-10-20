@@ -96,7 +96,6 @@ body {
   padding: 32px;
 }
 
-/* Controlamos el tamaño exacto de los SVG oficiales */
 .custom-icon {
   width: 32px;
   height: 32px;
@@ -115,13 +114,13 @@ body {
 .badge-outline {
   border: 1px solid var(--rc-border);
   color: var(--rc-white);
-  font-weight: 400; /* Regular */
+  font-weight: 400;
 }
 
 .badge-solid {
   background-color: var(--rc-red);
   color: var(--rc-white);
-  font-weight: 800; /* ExtraBold */
+  font-weight: 800;
   border: 1px solid var(--rc-red);
 }
 .container {
