@@ -28,9 +28,16 @@
   max-width: 1200px;
 }
 
-.ticket-card {
-  background-color: var(--rc-surface);
-  border: 1px solid var(--rc-border);
-  border-radius: 1rem;
-  color: var(--rc-white);
+.countador-banner {
+  background: linear-gradient(90deg, #1e0a0d 0%, #111113 45%);
+  border: 1px solid #361216;
+  border-radius: 1.25rem;
+  padding: 1.5rem 2rem;
+}
+
+.countador-titulo {
+  color: var(--rc-red);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
 }
