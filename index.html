@@ -58,7 +58,6 @@
               </p>
 
               <!-- Grupo de Botones -->
-              <!-- Grupo de Botones (SIN la clase 'btn' de Bootstrap) -->
               <div class="d-flex flex-column flex-sm-row gap-3 buttons-group">
                 <button class="btn-buy">Comprar entrada</button>
                 <button class="btn-agenda">Ver agenda</button>
@@ -67,6 +66,61 @@
             <!-- FIN COLUMNA IZQUIERDA -->
 
             <!-- COLUMNA DERECHA -->
+            <div class="col-lg-5">
+              <!-- Este es el contenedor negro -->
+              <div class="details-panel">
+                <!-- BLOQUE 1: Fecha y Hora -->
+                <div class="d-flex align-items-start mb-4">
+                  <!-- Usamos el SVG de la carpeta assets -->
+                  <img
+                    src="assets/iconos/calendario.svg"
+                    alt="Calendario"
+                    class="me-3 custom-icon"
+                  />
+                  <div>
+                    <h2 class="agenda-title">JUE 19/11</h2>
+                    <p class="agenda-time tabular-nums">18.00 hs</p>
+                  </div>
+                </div>
+
+                <hr class="border-rc mb-4 opacity-100" />
+
+                <!-- BLOQUE 2: Ubicación -->
+                <div class="d-flex align-items-start mb-4">
+                  <img
+                    src="assets/iconos/ubicacion.svg"
+                    alt="Ubicación"
+                    class="me-3 custom-icon"
+                  />
+                  <div>
+                    <h3 class="agenda-subtitle">Rolling Code School</h3>
+                    <p class="agenda-text">Gral. Paz 576, Entrepiso</p>
+                  </div>
+                </div>
+
+                <hr class="border-rc mb-4 opacity-100" />
+
+                <!-- BLOQUE 3: Precio -->
+                <div class="d-flex align-items-start mb-4">
+                  <img
+                    src="assets/iconos/entrada.svg"
+                    alt="Entrada"
+                    class="me-3 custom-icon"
+                  />
+                  <div>
+                    <h3 class="agenda-subtitle">Entradas desde $15.000</h3>
+                    <p class="agenda-text">Early Bird hasta el 31/10</p>
+                  </div>
+                </div>
+
+                <!-- BLOQUE 4: Etiquetas (Chips) -->
+                <div class="d-flex gap-2 mt-4 flex-wrap">
+                  <span class="badge-outline">Presencial</span>
+                  <span class="badge-outline">Virtual</span>
+                  <span class="badge-solid">Cupos limitados</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

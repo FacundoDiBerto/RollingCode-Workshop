@@ -84,6 +84,46 @@ body {
   background-color: var(--rc-white);
   color: var(--rc-black);
 }
+
+/* =========================================
+   COLUMNA DERECHA (PANEL NEGRO)
+   ========================================= */
+
+.details-panel {
+  background-color: var(--rc-surface);
+  border-radius: 28px;
+  border: 1px solid var(--rc-border);
+  padding: 32px;
+}
+
+/* Controlamos el tamaño exacto de los SVG oficiales */
+.custom-icon {
+  width: 32px;
+  height: 32px;
+}
+
+/* Etiquetas (Chips) */
+.badge-outline,
+.badge-solid {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  border-radius: 999px; /* Forma de píldora */
+  padding: 8px 16px;
+  display: inline-block;
+}
+
+.badge-outline {
+  border: 1px solid var(--rc-border);
+  color: var(--rc-white);
+  font-weight: 400; /* Regular */
+}
+
+.badge-solid {
+  background-color: var(--rc-red);
+  color: var(--rc-white);
+  font-weight: 800; /* ExtraBold */
+  border: 1px solid var(--rc-red);
+}
 .container {
   max-width: 1200px;
 }
