@@ -36,18 +36,21 @@ body {
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 .workshop-label {
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 3px;
   text-transform: uppercase;
 }
 
 .main-title {
   font-family: "Plus Jakarta Sans", sans-serif;
-  font-size: clamp(40px, 6vw, 88px);
+  font-size: clamp(40px, 5vw, 80px);
   font-weight: 800;
   line-height: 1.02;
   letter-spacing: -1.5px;
   text-transform: uppercase;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
 }
 .btn-buy,
 .btn-agenda {
@@ -122,6 +125,10 @@ body {
   color: var(--rc-white);
   font-weight: 800;
   border: 1px solid var(--rc-red);
+}
+
+.espacio {
+  padding: 60px 48px;
 }
 .container {
   max-width: 1200px;
