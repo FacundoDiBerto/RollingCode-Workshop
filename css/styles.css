@@ -69,3 +69,35 @@
   letter-spacing: 0.05em;
   margin-top: 0.35rem;
 }
+
+.progress-container {
+  width: 100%;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8125rem;
+  color: var(--rc-white);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.progress-info-mute {
+  color: var(--rc-text-mute);
+}
+
+.progress-track {
+  background-color: #232328;
+  border-radius: 999px;
+  height: 6px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.progress-linea {
+  background-color: var(--rc-red);
+  height: 100%;
+  border-radius: 999px;
+  width: 63%;
+}
