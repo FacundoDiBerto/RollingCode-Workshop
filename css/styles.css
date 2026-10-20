@@ -38,7 +38,7 @@
 .btn-comprar {
   background-color: var(--rc-red);
   padding: 10px 24px;
-  border-radius: 999px;
+  border-radius: 88px;
   min-height: 44px;
   display: inline-flex;
   align-items: center;
@@ -48,9 +48,13 @@
   background-color: var(--rc-red-dark);
 }
 
+.navbar {
+  border-bottom: 1px solid var(--rc-surface-2);
+}
+
 .navbar-nav .nav-link {
-  color: var(--rc-white);
-  font-weight: 800;
+  color: var(--rc-text-mute);
+  font-weight: 700;
   font-size: 16px;
 }
 
