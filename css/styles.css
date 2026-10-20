@@ -1,4 +1,4 @@
-@‌import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 :root {
   --rc-red: #e0202a;
@@ -47,5 +47,21 @@
 .btn-comprar:hover {
   background-color: var(--rc-red-dark);
 }
+
+.navbar-nav .nav-link {
+  color: var(--rc-white);
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--rc-red);
+}
+
+.navbar-nav .nav-link.btn-comprar,
+.navbar-nav .nav-link.btn-comprar:hover {
+  color: var(--rc-white);
+}
+
 
 
