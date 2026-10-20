@@ -28,3 +28,9 @@
   max-width: 1200px;
 }
 
+.ticket-card {
+  background-color: var(--rc-surface);
+  border: 1px solid var(--rc-border);
+  border-radius: 1rem;
+  color: var(--rc-white);
+}
