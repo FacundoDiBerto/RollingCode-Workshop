@@ -130,6 +130,9 @@ body {
   margin-bottom: 4px;
 }
 
+.agenda-text {
+  color: var(--rc-text-mute);
+}
 .agenda-subtitle,
 .agenda-text {
   margin: 0;
@@ -164,6 +167,11 @@ body {
 
 .espacio {
   padding: 60px 48px;
+}
+
+hr.border-rc {
+  color: var(--rc-border) !important;
+  border-color: var(--rc-border) !important;
 }
 .container {
   max-width: 1200px;
