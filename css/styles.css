@@ -177,6 +177,26 @@ hr.border-rc {
   max-width: 1200px;
 }
 
+.barra-estadisticas {
+  background-color: var(--rc-surface);
+  border: 1px solid var(--rc-border);
+  border-radius: 18px;
+  padding: 40px 48px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.estadistica-numero {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: var(--rc-red);
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.estadistica-text {
+  color: var(--rc-text-mute);
+}
 footer {
   border-top: 1px solid var(--rc-surface-2);
 }
