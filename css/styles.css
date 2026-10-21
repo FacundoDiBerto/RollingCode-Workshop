@@ -24,10 +24,21 @@
 }
 
 /* css SAMIR */
-.workshop-card {
+/* .workshop-card {
   background: var(--rc-gradient);
   border-radius: 2rem;
   max-width: 1200px;
+  color: var(--rc-white);
+} */
+.workshop-card {
+  background: var(--rc-gradient);
+  border-radius: 40px;
+
+  /* ESTAS DOS LÍNEAS SON CLAVES PARA EL ANCHO */
+  width: 100%;
+  max-width: 1312px;
+  margin: 0 auto;
+  padding: 48px 56px;
   color: var(--rc-white);
 }
 body {
