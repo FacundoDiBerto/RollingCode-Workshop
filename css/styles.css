@@ -101,8 +101,11 @@ body {
   background-color: var(--rc-surface);
   border-radius: 28px;
   border: 1px solid var(--rc-border);
-  padding: 32px;
+  padding: 40px;
+  max-width: 450px;
+  margin-left: auto;
   width: 100%;
+  height: fit-content;
 }
 
 .custom-icon {
