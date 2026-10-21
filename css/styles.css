@@ -32,3 +32,23 @@
   height: 50px;
   width: auto;
 }
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--rc-border);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon img {
+  width: 18px;
+  height: 18px;
+}
+
+.social-icon:hover {
+  background-color: var(--rc-red);
+  border-color: var(--rc-red);
+}
