@@ -185,7 +185,14 @@ hr.border-rc {
   max-width: 1200px;
   margin: 0 auto;
 }
-
+.estadistica-numero {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: var(--rc-red);
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 8px;
+}
 footer {
   border-top: 1px solid var(--rc-surface-2);
 }
