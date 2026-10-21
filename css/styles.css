@@ -28,6 +28,10 @@
   max-width: 1200px;
 }
 
+footer {
+  border-top: 1px solid var(--rc-surface-2);
+}
+
 .footer-logo-img {
   height: 50px;
   width: auto;
