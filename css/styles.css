@@ -177,6 +177,15 @@ hr.border-rc {
   max-width: 1200px;
 }
 
+.barra-estadisticas {
+  background-color: var(--rc-surface);
+  border: 1px solid var(--rc-border);
+  border-radius: 18px;
+  padding: 40px 48px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 footer {
   border-top: 1px solid var(--rc-surface-2);
 }
