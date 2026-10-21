@@ -279,3 +279,10 @@ footer {
   line-height: 1.05;
   letter-spacing: -1px;
 }
+
+.direccion-principal {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.1;
+}
