@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 
 :root {
   --rc-red: #e0202a;
@@ -12,10 +12,9 @@
   --rc-text-soft: #d4d4d8;
   --rc-text-mute: #a1a1aa;
   --rc-gradient: linear-gradient(160deg, #e0202a 0%, #a50d14 55%, #6e070c 100%);
-
-  /* Así le decís a Bootstrap que use tus colores */
   --bs-body-bg: var(--rc-black);
   --bs-body-color: var(--rc-white);
+  --bs-body-font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 * {
@@ -24,6 +23,156 @@
   box-sizing: border-box;
 }
 
+/* css SAMIR */
+.workshop-card {
+  background: var(--rc-gradient);
+  border-radius: 40px;
+  width: 100%;
+  max-width: 1312px;
+  margin: 0 auto;
+  padding: 48px 56px;
+  color: var(--rc-white);
+}
+body {
+  background-color: var(--rc-black);
+  color: var(--rc-white);
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+.workshop-label {
+  font-size: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.main-title {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: clamp(40px, 5vw, 80px);
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: -1.5px;
+  text-transform: uppercase;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+.main-paragraph {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+}
+.btn-buy,
+.btn-agenda {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  border-radius: 999px;
+  min-height: 52px;
+  padding: 0 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-buy {
+  background-color: var(--rc-black);
+  color: var(--rc-white);
+  border: none;
+}
+.btn-buy:hover {
+  background-color: #222;
+  color: var(--rc-white);
+}
+
+.btn-agenda {
+  background-color: transparent;
+  color: var(--rc-white);
+  border: 2px solid var(--rc-white);
+}
+
+.btn-agenda:hover {
+  background-color: var(--rc-white);
+  color: var(--rc-black);
+}
+
+.details-panel {
+  background-color: var(--rc-surface);
+  border-radius: 28px;
+  border: 1px solid var(--rc-border);
+  padding: 40px;
+  max-width: 450px;
+  margin-left: auto;
+  width: 100%;
+  height: fit-content;
+}
+
+.agenda-title {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 4px;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.agenda-time {
+  font-size: 30px;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.agenda-subtitle {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.agenda-text {
+  color: var(--rc-text-mute);
+}
+.agenda-subtitle,
+.agenda-text {
+  margin: 0;
+  line-height: 1.1;
+}
+.custom-icon {
+  width: 36px;
+  height: 36px;
+}
+
+.badge-outline,
+.badge-solid {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  border-radius: 999px;
+  padding: 8px 16px;
+  display: inline-block;
+}
+
+.badge-outline {
+  border: 1px solid var(--rc-border);
+  color: var(--rc-white);
+  font-weight: 400;
+}
+
+.badge-solid {
+  background-color: var(--rc-red);
+  color: var(--rc-white);
+  font-weight: 800;
+  border: 1px solid var(--rc-red);
+}
+
+.espacio {
+  padding: 60px 48px;
+}
+
+hr.border-rc {
+  color: var(--rc-border) !important;
+  border-color: var(--rc-border) !important;
+}
 .container {
   max-width: 1200px;
 }
