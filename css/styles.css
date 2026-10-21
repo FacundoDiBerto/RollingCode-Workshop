@@ -56,7 +56,6 @@ footer {
   background-color: var(--rc-red);
   border-color: var(--rc-red);
 }
-/* Navbar */
 
 .nav-logo {
   height: 60px;
@@ -94,6 +93,3 @@ footer {
 .navbar-nav .nav-link.btn-comprar:hover {
   color: var(--rc-white);
 }
-
-
-
