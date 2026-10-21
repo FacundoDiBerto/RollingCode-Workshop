@@ -129,3 +129,69 @@ body {
 .container {
   max-width: 1200px;
 }
+
+footer {
+  border-top: 1px solid var(--rc-surface-2);
+}
+
+.footer-logo-img {
+  height: 50px;
+  width: auto;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--rc-border);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon img {
+  width: 18px;
+  height: 18px;
+}
+
+.social-icon:hover {
+  background-color: var(--rc-red);
+  border-color: var(--rc-red);
+}
+
+.nav-logo {
+  height: 60px;
+  width: auto;
+}
+
+.btn-comprar {
+  background-color: var(--rc-red);
+  padding: 10px 24px;
+  border-radius: 88px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-comprar:hover {
+  background-color: var(--rc-red-dark);
+}
+
+.navbar {
+  border-bottom: 1px solid var(--rc-surface-2);
+}
+
+.navbar-nav .nav-link {
+  color: var(--rc-text-mute);
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--rc-red);
+}
+
+.navbar-nav .nav-link.btn-comprar,
+.navbar-nav .nav-link.btn-comprar:hover {
+  color: var(--rc-white);
+}
