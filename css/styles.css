@@ -55,6 +55,12 @@ body {
   word-wrap: break-word;
   hyphens: auto;
 }
+
+.main-paragraph {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+}
 .btn-buy,
 .btn-agenda {
   font-family: "Plus Jakarta Sans", sans-serif;
