@@ -570,3 +570,16 @@ cantidad-label {
   background-color: var(--rc-surface-2);
   color: var(--rc-white);
 }
+
+.card-gold {
+  flex: 1 1 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 992px) {
+  .card-gold {
+    flex: 1 1 0;
+    min-width: 210px;
+    max-width: 260px;
+  }
+}
