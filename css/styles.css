@@ -246,6 +246,7 @@ footer {
 
 .navbar {
   border-bottom: 1px solid var(--rc-surface-2);
+  background-color: var(--rc-black);
 }
 
 .navbar-nav .nav-link {
@@ -261,4 +262,10 @@ footer {
 .navbar-nav .nav-link.btn-comprar,
 .navbar-nav .nav-link.btn-comprar:hover {
   color: var(--rc-white);
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
 }
