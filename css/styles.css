@@ -569,3 +569,58 @@ cantidad-label {
   background-color: rgba(0, 0, 0, 0.2);
   color: #ffffff;
 }
+
+.modal-pago-body {
+  padding: 1.75rem 2rem;
+}
+
+
+.campo-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+  display: block;
+  color: #e4e4e7;
+}
+
+.campo-requerido {
+  color: var(--rc-red);
+}
+
+.campo-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #121215;
+  border: 1px solid #27272a;
+  border-radius: 0.6rem;
+  padding: 0.55rem 0.75rem;
+}
+
+.campo-input-wrapper--error {
+  border-color: #dc2626;
+}
+
+.campo-input-wrapper--valido {
+  border-color: #27272a;
+}
+
+.campo-icono {
+  color: #a1a1aa;
+  display: flex;
+  align-items: center;
+  margin-right: 0.6rem;
+}
+
+.campo-input {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 0.85rem;
+  width: 100%;
+  outline: none;
+}
+
+.campo-input::placeholder {
+  color: #52525b;
+}

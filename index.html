@@ -267,6 +267,28 @@
               </div>
             </div>
           </div>
+          <div class="modal-pago-body">
+            <form class="row g-4" onsubmit="event.preventDefault();">
+
+              <!-- Columna Izquierda: Campos del Formulario -->
+              <div class="col-lg-7">
+
+                <!-- Número de Tarjeta -->
+                <div class="campo-pago mb-3">
+                  <label class="campo-label">Número de tarjeta <span class="campo-requerido">*</span></label>
+                  <div class="campo-input-wrapper">
+                    <span class="campo-icono">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <rect x="2" y="5" width="20" height="14" rx="2" />
+                        <line x1="2" y1="10" x2="22" y2="10" />
+                      </svg>
+                    </span>
+                    <input type="text" class="campo-input" placeholder="1234 5678 9012 3456" required>
+                  </div>
+                  <!-- Mensaje de error oculto por defecto -->
+                  <span class="campo-mensaje campo-mensaje--error d-none">El número de tarjeta no es válido</span>
+                </div>
   </main>
   <footer class="py-4">
     <div class="container d-flex justify-content-between align-items-center flex-wrap gap-3">
