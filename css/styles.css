@@ -505,3 +505,47 @@ cantidad-label {
   opacity: 0.5;
   text-decoration: none;
 }
+
+/* bordes dl prototipo con colores */
+
+.badge-outline.tier-diamond-1 {
+  border-color: var(--rc-red);
+  color: var(--rc-red);
+}
+.card-diamond-1 {
+  border-color: var(--rc-red);
+}
+
+.tier-diamond-1 {
+  color: var(--rc-red);
+}
+
+.badge-outline.tier-diamond-2 {
+  border-color: #f97316;
+  color: #f97316;
+}
+.card-diamond-2 {
+  border-color: #f97316;
+}
+.tier-text-2 {
+  color: #f97316;
+}
+
+.tier-diamond-2 {
+  color: #f97316;
+}
+
+.badge-outline.tier-diamond-3 {
+  border-color: #eab308;
+  color: #eab308;
+}
+.card-diamond-3 {
+  border-color: #eab308;
+}
+.tier-text-3 {
+  color: #eab308;
+}
+
+.tier-diamond-3 {
+  color: #eab308;
+}
