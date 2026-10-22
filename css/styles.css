@@ -400,3 +400,30 @@ cantidad-label {
   font-weight: 700;
   font-size: 1rem;
 }
+
+.btn-checkout-continuar {
+  background-color: #0b0b0c;
+  color: #ffffff;
+  border: none;
+  border-radius: 50rem;
+  padding: 0.85rem;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin-top: 1.25rem;
+  transition: background-color 0.2s ease;
+}
+
+.btn-checkout-continuar:hover {
+  background-color: #27272a;
+  color: #ffffff;
+}
+
+.disclaimer-texto {
+  font-size: 0.7rem;
+  color: #71717a;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
