@@ -450,6 +450,16 @@ cantidad-label {
   font-weight: 800;
   margin-bottom: 4px;
 }
+.badge-outline.badge-sm {
+  padding: 4px 12px;
+  font-size: 12px;
+}
+
+.badge-outline.badge-xs {
+  padding: 2px 8px;
+  font-size: 10px;
+}
+
 .sponsor-card {
   background-color: var(--rc-surface);
   border: 1px solid var(--rc-border);
@@ -462,6 +472,12 @@ cantidad-label {
     transform 0.2s ease,
     border-color 0.2s ease;
 }
+
+.sponsor-card:hover {
+  transform: translateY(-4px);
+  background-color: var(--rc-surface-2);
+}
+
 .badge-outline.badge-sm {
   padding: 4px 12px;
   font-size: 12px;
@@ -482,4 +498,10 @@ cantidad-label {
   max-width: 56px;
   max-height: 56px;
   object-fit: contain;
+}
+
+.icon-link {
+  color: var(--rc-white);
+  opacity: 0.5;
+  text-decoration: none;
 }
