@@ -587,3 +587,41 @@ cantidad-label {
 .text-xxs {
   font-size: 12px;
 }
+
+.card-bronze {
+  flex: 1 1 140px;
+  max-width: 100%;
+}
+
+.logo-box-sm {
+  width: 64px;
+  height: 64px;
+  background-color: var(--rc-surface-2);
+  border: 1px solid var(--rc-border);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sponsor-logo-sm {
+  max-width: 32px;
+  max-height: 32px;
+  object-fit: contain;
+}
+
+@media (min-width: 992px) {
+  .card-bronze {
+    flex: 1 1 0;
+    min-width: 130px;
+    max-width: 160px;
+  }
+}
+
+.card-gold .sponsor-name {
+  font-size: 18px !important;
+}
+
+.card-bronze .sponsor-name {
+  font-size: 14px !important;
+}
