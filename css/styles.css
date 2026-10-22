@@ -508,3 +508,18 @@ cantidad-label {
   stroke: var(--rc-red);
   flex-shrink: 0;
 }
+
+.modal-pago {
+  background-color: #0b0b0c;
+  border: 1px solid #27272a;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  color: #ffffff;
+}
+
+/* Header */
+.modal-pago-header {
+  background: linear-gradient(135deg, #a30c14 0%, #470206 100%);
+  padding: 1.75rem 2rem;
+  position: relative;
+}
