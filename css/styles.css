@@ -262,3 +262,10 @@ footer {
 .navbar-nav .nav-link.btn-comprar:hover {
   color: var(--rc-white);
 }
+
+.checkout-contenedor {
+  background: linear-gradient(135deg, #bd0f18 0%, #80060d 100%);
+  border-radius: 1.5rem;
+  padding: 2.5rem 2rem;
+  color: #ffffff;
+}
