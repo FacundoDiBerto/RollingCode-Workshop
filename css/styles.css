@@ -283,3 +283,24 @@ footer {
   font-weight: 800;
   margin-bottom: 0;
 }
+
+.checkout-pasos {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.paso-item {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.35rem 0.85rem;
+  border-radius: 50rem;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+}
+
+.paso-item--activo {
+  background-color: #0b0b0c;
+  border-color: #0b0b0c;
+  color: #ffffff;
+}
