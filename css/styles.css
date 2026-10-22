@@ -325,3 +325,28 @@ footer {
   filter: invert(90%) hue-rotate(180deg);
 }
 
+.mapa-card {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background-color: var(--rc-black);
+  border: 1px solid var(--rc-border);
+  border-radius: 14px;
+  padding: 16px 20px;
+}
+
+
+
+.mapa-card-title {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.mapa-card-text,
+.mapa-card-coords {
+  font-size: 14px;
+  color: var(--rc-text-mute);
+}
+
