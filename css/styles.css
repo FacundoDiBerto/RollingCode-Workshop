@@ -434,3 +434,51 @@ cantidad-label {
   margin-top: 1rem;
   margin-bottom: 0;
 }
+
+.card-resumen {
+  background-color: #0b0b0c;
+  color: #ffffff;
+  border-radius: 1.25rem;
+  padding: 2rem;
+}
+
+.resumen-subtitulo {
+  color: var(--rc-red);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.resumen-evento-titulo {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.resumen-evento-fecha {
+  font-size: 0.75rem;
+  color: #a1a1aa;
+  margin-bottom: 1.25rem;
+}
+
+.resumen-divisor {
+  border-top: 1px solid #27272a;
+  margin: 1rem 0;
+}
+
+.resumen-linea {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #d4d4d8;
+  margin-bottom: 0.5rem;
+}
+
+.resumen-total-linea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.25rem;
+}
