@@ -482,3 +482,29 @@ cantidad-label {
   align-items: center;
   margin-top: 1.25rem;
 }
+
+.resumen-total-label {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.resumen-total-monto {
+  font-weight: 800;
+  font-size: 1.75rem;
+}
+
+.resumen-seguridad {
+  font-size: 0.68rem;
+  color: #a1a1aa;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 1.25rem;
+  margin-bottom: 0;
+}
+
+.resumen-seguridad svg {
+  color: var(--rc-red);
+  stroke: var(--rc-red);
+  flex-shrink: 0;
+}
