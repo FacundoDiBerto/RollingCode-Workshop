@@ -549,3 +549,24 @@ cantidad-label {
 .tier-diamond-3 {
   color: #eab308;
 }
+
+.icon-link-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--rc-border);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--rc-text-mute);
+  text-decoration: none;
+  font-size: 14px;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.icon-link-circle:hover {
+  background-color: var(--rc-surface-2);
+  color: var(--rc-white);
+}
