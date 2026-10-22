@@ -246,6 +246,7 @@ footer {
 
 .navbar {
   border-bottom: 1px solid var(--rc-surface-2);
+  background-color: var(--rc-black);
 }
 
 .navbar-nav .nav-link {
@@ -352,3 +353,173 @@ footer {
   color: var(--rc-text-mute);
 }
 
+@media (min-width: 992px) {
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+
+.checkout-contenedor {
+  background: linear-gradient(135deg, #bd0f18 0%, #80060d 100%);
+  border-radius: 1.5rem;
+  padding: 2.5rem 2rem;
+  color: #ffffff;
+}
+
+.checkout-subtitulo {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.checkout-titulo {
+  font-size: 2.25rem;
+  font-weight: 800;
+  margin-bottom: 0;
+}
+
+.checkout-pasos {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.paso-item {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.35rem 0.85rem;
+  border-radius: 50rem;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+}
+
+.paso-item--activo {
+  background-color: #0b0b0c;
+  border-color: #0b0b0c;
+  color: #ffffff;
+}
+
+.card-seleccion {
+  background-color: #ffffff;
+  color: #0b0b0c;
+  border-radius: 1.25rem;
+  padding: 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-seleccion-titulo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+
+/* Opciones de Tickets */
+.opcion-ticket {
+  border-radius: 0.85rem;
+  padding: 1rem 1.25rem;
+  margin-bottom: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.opcion-ticket--inactiva {
+  background-color: #ffffff;
+  border: 1px solid #e4e4e7;
+  color: #0b0b0c;
+}
+
+.opcion-ticket--activa {
+  background-color: #0b0b0c;
+  border: 1px solid #0b0b0c;
+  color: #ffffff;
+}
+
+.opcion-nombre {
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 0.15rem;
+}
+
+.opcion-detalle {
+  font-size: 0.75rem;
+  margin-bottom: 0;
+}
+
+.opcion-ticket--inactiva .opcion-detalle {
+  color: #71717a;
+}
+
+.opcion-ticket--activa .opcion-detalle {
+  color: #a1a1aa;
+}
+
+.opcion-precio {
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+
+cantidad-label {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.cantidad-controles {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.btn-cantidad {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #e4e4e7;
+  background-color: #ffffff;
+  color: #0b0b0c;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.cantidad-numero {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.btn-checkout-continuar {
+  background-color: #0b0b0c;
+  color: #ffffff;
+  border: none;
+  border-radius: 50rem;
+  padding: 0.85rem;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin-top: 1.25rem;
+  transition: background-color 0.2s ease;
+}
+
+.btn-checkout-continuar:hover {
+  background-color: #27272a;
+  color: #ffffff;
+}
+
+.disclaimer-texto {
+  font-size: 0.7rem;
+  color: #71717a;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
