@@ -583,3 +583,7 @@ cantidad-label {
     max-width: 260px;
   }
 }
+
+.text-xxs {
+  font-size: 12px;
+}
