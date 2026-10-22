@@ -338,7 +338,9 @@ footer {
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  transition: border-color 0.2s ease, background-color 0.2s ease;
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease;
 }
 
 .opcion-ticket--inactiva {
@@ -433,4 +435,34 @@ cantidad-label {
   color: #71717a;
   margin-top: 1rem;
   margin-bottom: 0;
+}
+
+/* seccion sponsoors */
+.sponsor-tier-title {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: 1px;
+}
+.sponsor-name {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+.sponsor-card {
+  background-color: var(--rc-surface);
+  border: 1px solid var(--rc-border);
+  border-radius: 24px;
+  padding: 24px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+.badge-outline.badge-sm {
+  padding: 4px 12px;
+  font-size: 12px;
 }
