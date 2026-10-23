@@ -438,3 +438,12 @@ cantidad-label {
 .e404-wrapper {
   padding: 80px 24px;
 }
+
+.e404-number {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: clamp(60px, 8vw, 100px);
+  font-weight: 800;
+  line-height: 1;
+  color: var(--rc-white);
+  margin-bottom: 8px;
+}
