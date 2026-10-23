@@ -149,8 +149,9 @@
           <span class="etiqueta">Speakers</span>
           <h2 class="titulo-seccion">Diez charlas, un mismo objetivo</h2>
 
-          <!-- Grilla: 1 col (celu) · 2 (sm) · 3 (md) · 5 (lg) => 2 filas x 5 en escritorio -->
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4">
+          <!-- Escritorio: grilla de 2 filas x 5 · Celular y tablet: carrusel de 4 tarjetas -->
+          <div class="speakers-carrusel">
+          <div class="row row-cols-lg-5 g-4 speakers-track" id="speakersTrack">
 
             <!-- 1 -->
             <div class="col">
@@ -273,6 +274,18 @@
             </div>
 
           </div>
+
+            <!-- Flechas del carrusel (solo celular y tablet) -->
+            <button type="button" class="speakers-flecha speakers-flecha--prev d-lg-none" id="speakersPrev" aria-label="Speakers anteriores">
+              <i class="bi bi-chevron-left"></i>
+            </button>
+            <button type="button" class="speakers-flecha speakers-flecha--next d-lg-none" id="speakersNext" aria-label="Speakers siguientes">
+              <i class="bi bi-chevron-right"></i>
+            </button>
+          </div>
+
+          <!-- Puntitos del carrusel (solo celular y tablet) -->
+          <div class="speakers-puntos d-lg-none" id="speakersPuntos"></div>
         </div>
       </section>
 
@@ -694,6 +707,57 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Carrusel de speakers (celular y tablet) -->
+  <script>
+    const track = document.getElementById("speakersTrack");
+    const puntos = document.getElementById("speakersPuntos");
+    const btnPrev = document.getElementById("speakersPrev");
+    const btnNext = document.getElementById("speakersNext");
+
+    // Cantidad de "páginas" según cuántas tarjetas entran a la vista
+    function cantidadPaginas() {
+      return Math.max(1, Math.ceil(track.scrollWidth / track.clientWidth - 0.05));
+    }
+
+    function paginaActual() {
+      const alFinal = track.scrollLeft + track.clientWidth >= track.scrollWidth - 5;
+      if (alFinal) return cantidadPaginas() - 1;
+      return Math.round(track.scrollLeft / track.clientWidth);
+    }
+
+    function irAPagina(numero) {
+      track.scrollTo({ left: numero * track.clientWidth, behavior: "smooth" });
+    }
+
+    function crearPuntos() {
+      puntos.innerHTML = "";
+      for (let i = 0; i < cantidadPaginas(); i++) {
+        const punto = document.createElement("button");
+        punto.type = "button";
+        punto.className = "speakers-punto";
+        punto.setAttribute("aria-label", "Ir a la página " + (i + 1));
+        punto.addEventListener("click", () => irAPagina(i));
+        puntos.appendChild(punto);
+      }
+      actualizar();
+    }
+
+    function actualizar() {
+      const actual = paginaActual();
+      puntos.querySelectorAll(".speakers-punto").forEach((punto, i) => {
+        punto.classList.toggle("speakers-punto--activo", i === actual);
+      });
+      btnPrev.disabled = actual === 0;
+      btnNext.disabled = actual === cantidadPaginas() - 1;
+    }
+
+    btnPrev.addEventListener("click", () => irAPagina(paginaActual() - 1));
+    btnNext.addEventListener("click", () => irAPagina(paginaActual() + 1));
+    track.addEventListener("scroll", actualizar);
+    window.addEventListener("resize", crearPuntos);
+    crearPuntos();
+  </script>
 </body>
 
 </html>
