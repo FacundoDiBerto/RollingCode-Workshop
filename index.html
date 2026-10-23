@@ -1280,31 +1280,31 @@
               el formulario y nos contactaremos en menos de 24 horas hábiles.
             </p>
           </div>
-
-          <!-- Tarjeta del formulario -->
           <div class="sponsor-form-card py-4">
             <form action="#">
               <div class="row g-4">
                 <div class="col-12 col-md-6">
-                  <label class="form-label-custom"
+                  <label for="nombreSponsor" class="form-label-custom"
                     >Nombre <span class="text-rc-red">*</span></label
                   >
                   <input
                     type="text"
+                    id="nombreSponsor"
                     class="form-input-custom"
                     placeholder="Ej. Martín"
-                    required
                     minlength="2"
                     maxlength="50"
+                    required
                   />
                 </div>
 
                 <div class="col-12 col-md-6">
-                  <label class="form-label-custom"
+                  <label for="apellidoSponsor" class="form-label-custom"
                     >Apellido <span class="text-rc-red">*</span></label
                   >
                   <input
                     type="text"
+                    id="apellidoSponsor"
                     class="form-input-custom"
                     placeholder="Ej. González"
                     required
@@ -1312,12 +1312,14 @@
                     maxlength="50"
                   />
                 </div>
+
                 <div class="col-12 col-md-6">
-                  <label class="form-label-custom"
+                  <label for="empresaSponsor" class="form-label-custom"
                     >Empresa <span class="text-rc-red">*</span></label
                   >
                   <input
                     type="text"
+                    id="empresaSponsor"
                     class="form-input-custom"
                     placeholder="Ej. Acme Technologies"
                     required
@@ -1327,11 +1329,12 @@
                 </div>
 
                 <div class="col-12 col-md-6">
-                  <label class="form-label-custom"
+                  <label for="emailSponsor" class="form-label-custom"
                     >Email corporativo <span class="text-rc-red">*</span></label
                   >
                   <input
                     type="email"
+                    id="emailSponsor"
                     class="form-input-custom"
                     placeholder="martin@acme.com"
                     required
@@ -1340,21 +1343,30 @@
                 </div>
 
                 <div class="col-12">
-                  <label class="form-label-custom"
+                  <label for="tipoSponsor" class="form-label-custom"
                     >Tipo de sponsor <span class="text-rc-red">*</span></label
                   >
-                  <select class="form-input-custom form-select-custom" required>
+                  <select
+                    id="tipoSponsor"
+                    class="form-input-custom form-select-custom"
+                    required
+                  >
                     <option value="" disabled selected>
                       Seleccioná un nivel de sponsoreo
                     </option>
-                    <option value="diamante">Tier Diamante</option>
-                    <option value="oro">Tier Oro</option>
-                    <option value="bronce">Tier Bronce</option>
+                    <option value="diamante">MAIN PARTNER</option>
+                    <option value="oro">GOLD TIER</option>
+                    <option value="bronce">BRONZE TIER</option>
                   </select>
                 </div>
+
                 <div class="col-12">
                   <label class="form-label-custom">Logo de la empresa</label>
-                  <div class="file-drop-area">
+                  <!-- Agregamos un label que envuelva el área para prepararlo si luego decides agregar un <input type="file"> oculto -->
+                  <label
+                    for="logoSponsor"
+                    class="file-drop-area w-100 d-block m-0"
+                  >
                     <div class="mb-3">
                       <svg
                         width="24"
@@ -1380,17 +1392,22 @@
                       Archivos aceptados: PNG, SVG, JPG o WEBP (Fondo
                       transparente recomendado, máx. 5MB)
                     </p>
-                  </div>
+                  </label>
                 </div>
+
                 <div class="col-12">
-                  <label class="form-label-custom">Mensaje opcional</label>
+                  <label for="mensajeSponsor" class="form-label-custom"
+                    >Mensaje opcional</label
+                  >
                   <textarea
+                    id="mensajeSponsor"
                     class="form-input-custom"
                     rows="4"
                     maxlength="500"
                     placeholder="Contanos sobre tu empresa y porque buscas ser Sponsor del evento"
                   ></textarea>
                 </div>
+
                 <div class="col-12 mt-4">
                   <button type="submit" class="btn-submit-sponsor w-100">
                     <svg
