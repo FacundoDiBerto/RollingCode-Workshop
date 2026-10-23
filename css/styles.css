@@ -339,8 +339,6 @@ footer {
   padding: 16px 20px;
 }
 
-
-
 .mapa-card-title {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 16px;
@@ -427,7 +425,9 @@ footer {
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  transition: border-color 0.2s ease, background-color 0.2s ease;
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease;
 }
 
 .opcion-ticket--inactiva {
@@ -524,8 +524,196 @@ cantidad-label {
   margin-bottom: 0;
 }
 
-.e404-wrapper {
-  padding: 80px 24px;
+/* seccion sponsoors */
+.sponsor-tier-title {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: 1px;
+}
+.sponsor-name {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+.badge-outline.badge-sm {
+  padding: 4px 12px;
+  font-size: 12px;
+}
+
+.badge-outline.badge-xs {
+  padding: 2px 8px;
+  font-size: 10px;
+}
+
+.sponsor-card {
+  background-color: var(--rc-surface);
+  border: 1px solid var(--rc-border);
+  border-radius: 24px;
+  padding: 24px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.sponsor-card:hover {
+  transform: translateY(-4px);
+  background-color: var(--rc-surface-2);
+}
+
+.badge-outline.badge-sm {
+  padding: 4px 12px;
+  font-size: 12px;
+}
+
+.logo-box {
+  width: 96px;
+  height: 96px;
+  background-color: var(--rc-surface-2);
+  border: 1px solid var(--rc-border);
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sponsor-logo {
+  max-width: 56px;
+  max-height: 56px;
+  object-fit: contain;
+}
+
+.icon-link {
+  color: var(--rc-white);
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+/* bordes dl prototipo con colores */
+
+.badge-outline.tier-diamond-1 {
+  border-color: var(--rc-red);
+  color: var(--rc-red);
+}
+.card-diamond-1 {
+  border-color: var(--rc-red);
+}
+
+.tier-diamond-1 {
+  color: var(--rc-red);
+}
+
+.badge-outline.tier-diamond-2 {
+  border-color: #f97316;
+  color: #f97316;
+}
+.card-diamond-2 {
+  border-color: #f97316;
+}
+.tier-text-2 {
+  color: #f97316;
+}
+
+.tier-diamond-2 {
+  color: #f97316;
+}
+
+.badge-outline.tier-diamond-3 {
+  border-color: #eab308;
+  color: #eab308;
+}
+.card-diamond-3 {
+  border-color: #eab308;
+}
+.tier-text-3 {
+  color: #eab308;
+}
+
+.tier-diamond-3 {
+  color: #eab308;
+}
+
+.icon-link-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--rc-border);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--rc-text-mute);
+  text-decoration: none;
+  font-size: 14px;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.icon-link-circle:hover {
+  background-color: var(--rc-surface-2);
+  color: var(--rc-white);
+}
+
+.card-gold {
+  flex: 1 1 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 992px) {
+  .card-gold {
+    flex: 1 1 0;
+    min-width: 210px;
+    max-width: 260px;
+  }
+}
+
+.text-xxs {
+  font-size: 12px;
+}
+
+.card-bronze {
+  flex: 1 1 140px;
+  max-width: 100%;
+}
+
+.logo-box-sm {
+  width: 64px;
+  height: 64px;
+  background-color: var(--rc-surface-2);
+  border: 1px solid var(--rc-border);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sponsor-logo-sm {
+  max-width: 32px;
+  max-height: 32px;
+  object-fit: contain;
+}
+
+@media (min-width: 992px) {
+  .card-bronze {
+    flex: 1 1 0;
+    min-width: 130px;
+    max-width: 160px;
+  }
+}
+
+.card-gold .sponsor-name {
+  font-size: 18px !important;
+}
+
+.card-bronze .sponsor-name {
+  font-size: 14px !important;
+  .e404-wrapper {
+    padding: 80px 24px;
+  }
 }
 
 .e404-number-img {
@@ -534,7 +722,6 @@ cantidad-label {
   height: auto;
   margin-bottom: 8px;
 }
-
 
 .e404-title {
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -675,7 +862,6 @@ cantidad-label {
   color: #ffffff;
 }
 
-
 .modal-pago-header {
   background: linear-gradient(135deg, #a30c14 0%, #470206 100%);
   padding: 1.75rem 2rem;
@@ -731,7 +917,6 @@ cantidad-label {
 .modal-pago-body {
   padding: 1.75rem 2rem;
 }
-
 
 .campo-label {
   font-size: 0.75rem;
@@ -832,12 +1017,19 @@ cantidad-label {
 }
 
 .tarjeta-preview {
-  background: radial-gradient(circle at 85% 15%, #8f121a 0%, #17171a 55%, #0f0f12 100%);
+  background: radial-gradient(
+    circle at 85% 15%,
+    #8f121a 0%,
+    #17171a 55%,
+    #0f0f12 100%
+  );
   border: 1px solid rgba(220, 38, 38, 0.45);
   border-radius: 0.9rem;
   padding: 1.25rem 1.4rem;
   color: #ffffff;
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(185, 28, 28, 0.15);
+  box-shadow:
+    0 10px 25px -5px rgba(0, 0, 0, 0.5),
+    inset 0 0 15px rgba(185, 28, 28, 0.15);
   position: relative;
 }
 
@@ -867,7 +1059,7 @@ cantidad-label {
 }
 
 .tarjeta-preview-chip::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: 0;
@@ -878,7 +1070,7 @@ cantidad-label {
 }
 
 .tarjeta-preview-chip::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   top: 0;
@@ -988,7 +1180,7 @@ cantidad-label {
 
 @media (min-width: 992px) {
   #modalPago .modal-dialog {
-    max-width: 920px; 
+    max-width: 920px;
   }
 }
 
