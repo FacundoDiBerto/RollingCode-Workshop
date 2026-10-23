@@ -1367,3 +1367,22 @@ cantidad-label {
     padding: 24px;
   }
 }
+.form-input-custom {
+  scroll-margin-top: 120px;
+}
+
+.form-input-custom:user-invalid {
+  border-color: #dc3545;
+}
+
+.form-input-custom:user-invalid ~ .invalid-feedback {
+  display: block;
+}
+
+.form-input-custom:user-valid {
+  border-color: #198754;
+}
+
+.file-drop-area {
+  cursor: pointer;
+}
