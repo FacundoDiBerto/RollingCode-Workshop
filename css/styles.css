@@ -711,10 +711,12 @@ cantidad-label {
 
 .card-bronze .sponsor-name {
   font-size: 14px !important;
-  .e404-wrapper {
-    padding: 80px 24px;
-  }
 }
+
+.e404-wrapper {
+  padding: 80px 24px;
+}
+
 
 .e404-number-img {
   width: 100%;
