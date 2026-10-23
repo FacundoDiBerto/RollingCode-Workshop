@@ -447,3 +447,15 @@ cantidad-label {
   color: var(--rc-white);
   margin-bottom: 8px;
 }
+
+.e404-title {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: clamp(22px, 3vw, 32px);
+  font-weight: 800;
+  color: var(--rc-white);
+  margin-bottom: 16px;
+}
+
+.e404-highlight {
+  color: var(--rc-red);
+}
