@@ -169,12 +169,6 @@ body {
   padding: 60px 48px;
 }
 
-@media (max-width: 575.98px) {
-  .espacio {
-    padding: 32px 16px;
-  }
-}
-
 
 hr.border-rc {
   color: var(--rc-border) !important;
@@ -191,12 +185,6 @@ hr.border-rc {
   padding: 40px 48px;
   max-width: 1200px;
   margin: 0 auto;
-}
-
-@media (max-width: 575.98px) {
-  .barra-estadisticas {
-    padding: 24px 20px;
-  }
 }
 
 .estadistica-numero {
@@ -377,6 +365,7 @@ footer {
   padding: 2.5rem 2rem;
   color: #ffffff;
 }
+
 
 .checkout-subtitulo {
   font-size: 0.75rem;
@@ -1205,13 +1194,6 @@ cantidad-label {
   padding: 96px 0;
 }
 
-/* Márgenes laterales mínimos de 24 px en celulares */
-@media (max-width: 575.98px) {
-  .speakers .container {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-}
 
 /* Etiqueta: 16 px · 800 · MAYÚSCULAS · +3 px */
 .etiqueta {
@@ -1277,13 +1259,6 @@ cantidad-label {
   margin-bottom: 8px;
 }
 
-@media (max-width: 767.98px) {
-  .speaker-nombre {
-    white-space: normal;
-    font-size: 16px;
-  }
-}
-
 
 /* Chip: caja gris fuerte a todo el ancho de la tarjeta */
 .speaker-chip {
@@ -1313,4 +1288,39 @@ cantidad-label {
   font-weight: 400;
   line-height: 1.55;
   margin-bottom: 0;
+}
+
+/* ===== Ajustes para mobile ===== */
+@media (max-width: 575.98px) {
+  .espacio {
+    padding: 32px 16px;
+  }
+
+  .barra-estadisticas {
+    padding: 24px 20px;
+  }
+
+  .checkout-contenedor {
+    padding: 1.5rem 1rem;
+  }
+
+  .card-seleccion {
+    padding: 1.25rem;
+  }
+
+  .card-resumen {
+    padding: 1.25rem;
+  }
+
+  .speakers .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .speaker-nombre {
+    white-space: normal;
+    font-size: 16px;
+  }
 }
