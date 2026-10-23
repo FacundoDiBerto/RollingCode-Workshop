@@ -434,3 +434,7 @@ cantidad-label {
   margin-top: 1rem;
   margin-bottom: 0;
 }
+
+.e404-wrapper {
+  padding: 80px 24px;
+}
