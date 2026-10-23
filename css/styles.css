@@ -192,6 +192,13 @@ hr.border-rc {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+@media (max-width: 575.98px) {
+  .barra-estadisticas {
+    padding: 24px 20px;
+  }
+}
+
 .estadistica-numero {
   font-family: "Plus Jakarta Sans", sans-serif;
   color: var(--rc-red);
