@@ -439,14 +439,13 @@ cantidad-label {
   padding: 80px 24px;
 }
 
-.e404-number {
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-size: clamp(60px, 8vw, 100px);
-  font-weight: 800;
-  line-height: 1;
-  color: var(--rc-white);
+.e404-number-img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
   margin-bottom: 8px;
 }
+
 
 .e404-title {
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -489,8 +488,6 @@ cantidad-label {
 }
 
 .e404-card {
-  background-color: var(--rc-surface);
-  border: 1px solid var(--rc-border);
   border-radius: 28px;
   padding: 40px;
   text-align: center;
