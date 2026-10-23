@@ -264,6 +264,95 @@ footer {
   color: var(--rc-white);
 }
 
+.section-label {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--rc-red);
+}
+
+.section-title {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: clamp(34px, 4.5vw, 56px);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -1px;
+}
+
+.direccion-principal {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.btn-maps {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  min-height: 52px;
+  padding: 0 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--rc-red);
+  color: var(--rc-white);
+  border: none;
+}
+
+.btn-maps:hover {
+  background-color: var(--rc-red-dark);
+  color: var(--rc-white);
+}
+
+.mapa-wrapper {
+  position: relative;
+  width: 100%;
+  border-radius: 28px;
+  overflow: hidden;
+  border: 1px solid var(--rc-border);
+}
+
+.mapa-iframe {
+  min-width: 100%;
+  height: 100%;
+  min-height: 420px;
+  border: 0;
+  display: block;
+  filter: invert(90%) hue-rotate(180deg);
+}
+
+.tamanio-mapa {
+  max-width: 600px;
+}
+
+.mapa-card {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background-color: var(--rc-black);
+  border: 1px solid var(--rc-border);
+  border-radius: 14px;
+  padding: 16px 20px;
+}
+
+
+
+.mapa-card-title {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.mapa-card-text,
+.mapa-card-coords {
+  font-size: 14px;
+  color: var(--rc-text-mute);
+}
+
 @media (min-width: 992px) {
   .navbar {
     background-color: rgba(0, 0, 0, 0.8);
