@@ -487,3 +487,11 @@ cantidad-label {
   background-color: var(--rc-red-dark);
   color: var(--rc-white);
 }
+
+.e404-card {
+  background-color: var(--rc-surface);
+  border: 1px solid var(--rc-border);
+  border-radius: 28px;
+  padding: 40px;
+  text-align: center;
+}
