@@ -280,7 +280,8 @@
                         <line x1="2" y1="10" x2="22" y2="10" />
                       </svg>
                     </span>
-                    <input type="text" class="campo-input" placeholder="1234 5678 9012 3456" required>
+                    <input type="text" class="campo-input" placeholder="1234 5678 9012 3456" maxlength="19"
+                      minlength="16" inputmode="numeric" required>
                   </div>
                   <span class="campo-mensaje campo-mensaje--error d-none">El número de tarjeta no es válido</span>
                 </div>
@@ -298,7 +299,8 @@
                             <line x1="3" y1="10" x2="21" y2="10" />
                           </svg>
                         </span>
-                        <input type="text" class="campo-input" placeholder="MM / AA" required>
+                        <input type="text" class="campo-input" placeholder="MM / AA" maxlength="5" minlength="5"
+                          inputmode="numeric" required>
                       </div>
                       <span class="campo-mensaje campo-mensaje--error d-none">La fecha de expiración es
                         obligatoria</span>
@@ -315,7 +317,8 @@
                             <path d="M7 11V7a5 5 0 0 1 10 0v4" />
                           </svg>
                         </span>
-                        <input type="text" class="campo-input" placeholder="123" required>
+                        <input type="text" class="campo-input" placeholder="123" maxlength="4" minlength="3"
+                          inputmode="numeric" required>
                       </div>
                       <span class="campo-mensaje campo-mensaje--error d-none">El CVV es obligatorio</span>
                     </div>
@@ -331,7 +334,8 @@
                         <circle cx="12" cy="7" r="4" />
                       </svg>
                     </span>
-                    <input type="text" class="campo-input" placeholder="Juan Pérez" required>
+                    <input type="text" class="campo-input" placeholder="Juan Pérez" maxlength="50" minlength="3"
+                      required>
                   </div>
                   <span class="campo-mensaje campo-mensaje--ayuda">Debe coincidir con el nombre de la tarjeta</span>
                 </div>
@@ -348,7 +352,8 @@
                         <line x1="7" y1="16" x2="17" y2="16" />
                       </svg>
                     </span>
-                    <input type="text" class="campo-input" placeholder="12.345.678" required>
+                    <input type="text" class="campo-input" placeholder="12345678" maxlength="11" minlength="7"
+                      inputmode="numeric" required>
                   </div>
                   <span class="campo-mensaje campo-mensaje--ayuda">Ingresá un número válido</span>
                 </div>
@@ -392,10 +397,12 @@
                     </div>
                   </div>
                 </div>
+
                 <button type="submit" class="btn-confirmar-pago">
                   Confirmar pago &rarr;
                 </button>
               </div>
+
             </form>
           </div>
   </main>
