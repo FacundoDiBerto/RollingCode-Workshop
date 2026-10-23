@@ -467,3 +467,23 @@ cantidad-label {
   line-height: 1.5;
   margin-bottom: 24px;
 }
+
+.e404-btn {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: var(--rc-red);
+  color: var(--rc-white);
+  font-weight: 800;
+  border-radius: 999px;
+  min-height: 52px;
+  padding: 0 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.e404-btn:hover {
+  background-color: var(--rc-red-dark);
+  color: var(--rc-white);
+}
