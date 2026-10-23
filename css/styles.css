@@ -624,3 +624,39 @@ cantidad-label {
 .campo-input::placeholder {
   color: #52525b;
 }
+
+.campo-estado {
+  font-size: 0.75rem;
+  font-weight: 800;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.5rem;
+}
+
+.campo-estado--error {
+  background-color: #dc2626;
+  color: #ffffff;
+}
+
+.campo-estado--valido {
+  border: 1px solid #52525b;
+  color: #a1a1aa;
+}
+
+.campo-mensaje {
+  font-size: 0.68rem;
+  margin-top: 0.25rem;
+  display: block;
+}
+
+.campo-mensaje--error {
+  color: #ef4444;
+}
+
+.campo-mensaje--ayuda {
+  color: #71717a;
+}
