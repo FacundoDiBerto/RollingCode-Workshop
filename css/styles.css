@@ -305,6 +305,12 @@ footer {
   border: 1px solid var(--rc-border);
   border-radius: 20px;
   padding: 14px 14px 20px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover: la tarjeta se agranda un poco */
+.speaker-card:hover {
+  transform: scale(1.05);
 }
 
 /* Caja de la foto: cuadrada */
