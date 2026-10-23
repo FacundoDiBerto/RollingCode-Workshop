@@ -1283,6 +1283,7 @@ cantidad-label {
 /* estilos del formmm */
 .sponsor-form-container {
   max-width: 860px;
+  margin: 0 auto;
 }
 
 .sponsor-form-card {
@@ -1356,4 +1357,13 @@ cantidad-label {
   align-items: center;
   justify-content: center;
   transition: background-color 0.3s ease;
+}
+.btn-submit-sponsor:hover {
+  background-color: var(--rc-red);
+}
+
+@media (max-width: 768px) {
+  .sponsor-form-card {
+    padding: 24px;
+  }
 }
