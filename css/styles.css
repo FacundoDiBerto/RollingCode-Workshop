@@ -461,7 +461,7 @@ cantidad-label {
 
 .e404-text {
   font-family: "Plus Jakarta Sans", sans-serif;
-  color: var(--rc-text-mute);
+  color: var(--rc-white);
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 24px;
@@ -491,4 +491,16 @@ cantidad-label {
   border-radius: 28px;
   padding: 40px;
   text-align: center;
+}
+
+.e404-illustration-img {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+}
+
+.e404-main {
+  min-height: 78vh;
+  display: flex;
+  align-items: center;
 }
