@@ -1277,6 +1277,14 @@ cantidad-label {
   margin-bottom: 8px;
 }
 
+@media (max-width: 767.98px) {
+  .speaker-nombre {
+    white-space: normal;
+    font-size: 16px;
+  }
+}
+
+
 /* Chip: caja gris fuerte a todo el ancho de la tarjeta */
 .speaker-chip {
   display: block;
