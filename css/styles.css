@@ -661,73 +661,123 @@ cantidad-label {
   color: #71717a;
 }
 
-.tarjeta-preview {
-  background: linear-gradient(135deg, #1d0709 0%, #0d0d0f 100%);
-  border: 1px solid #7f1d1d;
-  border-radius: 0.85rem;
+.tarjeta-panel {
+  background-color: #0d0d10;
+  border: 1px solid #1f1f23;
+  border-radius: 1rem;
   padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.tarjeta-preview {
+  background: radial-gradient(circle at 85% 15%, #8f121a 0%, #17171a 55%, #0f0f12 100%);
+  border: 1px solid rgba(220, 38, 38, 0.45);
+  border-radius: 0.9rem;
+  padding: 1.25rem 1.4rem;
   color: #ffffff;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(185, 28, 28, 0.15);
+  position: relative;
 }
 
 .tarjeta-preview-header {
   display: flex;
   justify-content: flex-end;
+  margin-bottom: 0.5rem;
 }
 
 .tarjeta-preview-brand {
-  font-weight: 800;
+  font-weight: 900;
   font-style: italic;
-  font-size: 1.1rem;
+  font-size: 1.35rem;
+  letter-spacing: -0.5px;
+  color: #ffffff;
 }
 
 .tarjeta-preview-chip {
-  width: 32px;
-  height: 24px;
-  background-color: #d4d4d8;
-  border-radius: 0.25rem;
-  margin: 1rem 0;
+  width: 38px;
+  height: 27px;
+  background: linear-gradient(135deg, #d4d4d8 0%, #a1a1aa 100%);
+  border-radius: 0.35rem;
+  margin-bottom: 1.25rem;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.tarjeta-preview-chip::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.35);
+  transform: translateY(-50%);
+}
+
+.tarjeta-preview-chip::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.35);
+  transform: translateX(-50%);
 }
 
 .tarjeta-preview-numero {
   font-family: monospace;
-  font-size: 1.1rem;
-  letter-spacing: 0.1em;
-  margin-bottom: 1rem;
+  font-size: 1.05rem;
+  letter-spacing: 0.12em;
+  margin-bottom: 1.25rem;
+  color: #f4f4f5;
+  white-space: nowrap;
 }
 
 .tarjeta-preview-footer {
   display: flex;
   justify-content: space-between;
-  font-size: 0.75rem;
-  color: #d4d4d8;
+  align-items: center;
+  font-size: 0.82rem;
+}
+
+.tarjeta-preview-nombre {
+  color: #e4e4e7;
+  font-weight: 500;
+}
+
+.tarjeta-preview-exp {
+  color: #a1a1aa;
 }
 
 .garantia-box {
-  background-color: #121215;
-  border: 1px solid #27272a;
-  border-radius: 0.75rem;
-  padding: 1rem;
+  background: transparent;
+  border: none;
+  padding: 0 0.25rem;
   display: flex;
   align-items: flex-start;
-  gap: 0.6rem;
+  gap: 0.75rem;
 }
 
 .garantia-icono {
-  border: 1px solid #52525b;
-  border-radius: 50%;
-  width: 22px;
-  height: 22px;
+  color: #a1a1aa;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
   flex-shrink: 0;
+  margin-top: 0.1rem;
 }
 
 .garantia-texto {
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   color: #a1a1aa;
   margin: 0;
+  line-height: 1.35;
 }
 
 .modal-pago-footer {
@@ -776,4 +826,10 @@ cantidad-label {
 
 .btn-confirmar-pago:hover {
   background-color: #b80e16;
+}
+
+@media (min-width: 992px) {
+  #modalPago .modal-dialog {
+    max-width: 920px; 
+  }
 }
