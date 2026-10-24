@@ -1311,6 +1311,14 @@ cantidad-label {
   .e404-card {
     padding: 24px;
   }
+
+  .modal-pago-header {
+    padding: 1.25rem 1.25rem 1.5rem;
+  }
+
+  .modal-pago-body {
+    padding: 1.25rem;
+  }
 }
 
 @media (max-width: 767.98px) {
