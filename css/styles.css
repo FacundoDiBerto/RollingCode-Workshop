@@ -671,6 +671,18 @@ cantidad-label {
   max-width: 100%;
 }
 
+.card-gold {
+  flex: 1 1 100%;
+  max-width: 100%;
+}
+
+@media (max-width: 767.98px) {
+  .card-gold {
+    flex: 0 1 420px;
+    max-width: 420px;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 991.98px) {
   .card-gold {
     flex: 1 1 calc(50% - 0.75rem);
