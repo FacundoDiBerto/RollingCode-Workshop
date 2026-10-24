@@ -1290,3 +1290,92 @@ cantidad-label {
   line-height: 1.55;
   margin-bottom: 0;
 }
+/* ===================== SPEAKERS · CARRUSEL (celular y tablet) ===================== */
+/* Usa el carrusel de Bootstrap 5.3: sin JavaScript propio */
+.carrusel-speakers {
+  padding-bottom: 40px; /* lugar para los puntitos */
+}
+
+/* Tarjetas compactas para que entren 4 por slide */
+.carrusel-speakers .speaker-card {
+  padding: 8px 8px 12px;
+  border-radius: 14px;
+}
+
+.carrusel-speakers .speaker-card:hover {
+  transform: none;
+}
+
+.carrusel-speakers .speaker-foto {
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.carrusel-speakers .speaker-nombre {
+  font-size: 13px;
+  white-space: normal;
+  margin-bottom: 6px;
+}
+
+.carrusel-speakers .speaker-chip {
+  border-radius: 8px;
+  font-size: 10px;
+  padding: 5px 7px;
+  margin-bottom: 8px;
+}
+
+.carrusel-speakers .speaker-texto {
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+/* Flechas: círculo oscuro a la altura de las fotos */
+.carrusel-flecha {
+  width: 36px;
+  height: 36px;
+  top: 15%;
+  bottom: auto;
+  border-radius: 999px;
+  border: 1px solid #3a3a40;
+  background-color: rgba(11, 11, 12, 0.85);
+  opacity: 1;
+}
+
+.carrusel-flecha.carousel-control-prev {
+  left: -8px;
+}
+
+.carrusel-flecha.carousel-control-next {
+  right: -8px;
+}
+
+.carrusel-flecha .carousel-control-prev-icon,
+.carrusel-flecha .carousel-control-next-icon {
+  width: 14px;
+  height: 14px;
+}
+
+/* Puntitos debajo de las tarjetas */
+.carrusel-puntos {
+  margin-bottom: 0;
+}
+
+.carrusel-puntos [data-bs-target] {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  border: 0;
+  margin: 0 4px;
+  background-color: #3a3a40;
+  opacity: 1;
+}
+
+.carrusel-puntos .active {
+  background-color: var(--rc-red);
+}
+
+@media (max-width: 991.98px) {
+  .titulo-seccion {
+    margin-bottom: 28px;
+  }
+}
