@@ -103,10 +103,10 @@ body {
   border: 1px solid var(--rc-border);
   padding: 40px;
   max-width: 450px;
-  margin-left: auto;
   width: 100%;
   height: fit-content;
 }
+
 
 .agenda-title {
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -169,6 +169,7 @@ body {
   padding: 60px 48px;
 }
 
+
 hr.border-rc {
   color: var(--rc-border) !important;
   border-color: var(--rc-border) !important;
@@ -185,6 +186,7 @@ hr.border-rc {
   max-width: 1200px;
   margin: 0 auto;
 }
+
 .estadistica-numero {
   font-family: "Plus Jakarta Sans", sans-serif;
   color: var(--rc-red);
@@ -364,6 +366,7 @@ footer {
   color: #ffffff;
 }
 
+
 .checkout-subtitulo {
   font-size: 0.75rem;
   font-weight: 700;
@@ -373,10 +376,11 @@ footer {
 }
 
 .checkout-titulo {
-  font-size: 2.25rem;
+  font-size: clamp(28px, 4vw, 36px);
   font-weight: 800;
   margin-bottom: 0;
 }
+
 
 .checkout-pasos {
   display: flex;
@@ -560,14 +564,18 @@ cantidad-label {
     border-color 0.2s ease;
 }
 
+@media (max-width: 767.98px) {
+  .sponsor-card {
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
 .sponsor-card:hover {
   transform: translateY(-4px);
   background-color: var(--rc-surface-2);
-}
-
-.badge-outline.badge-sm {
-  padding: 4px 12px;
-  font-size: 12px;
 }
 
 .logo-box {
@@ -663,6 +671,25 @@ cantidad-label {
   max-width: 100%;
 }
 
+.card-gold {
+  flex: 1 1 100%;
+  max-width: 100%;
+}
+
+@media (max-width: 767.98px) {
+  .card-gold {
+    flex: 0 1 420px;
+    max-width: 420px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .card-gold {
+    flex: 1 1 calc(50% - 0.75rem);
+    max-width: calc(50% - 0.75rem);
+  }
+}
+
 @media (min-width: 992px) {
   .card-gold {
     flex: 1 1 0;
@@ -670,6 +697,7 @@ cantidad-label {
     max-width: 260px;
   }
 }
+
 
 .text-xxs {
   font-size: 12px;
@@ -711,10 +739,12 @@ cantidad-label {
 
 .card-bronze .sponsor-name {
   font-size: 14px !important;
-  .e404-wrapper {
-    padding: 80px 24px;
-  }
 }
+
+.e404-wrapper {
+  padding: 80px 24px;
+}
+
 
 .e404-number-img {
   width: 100%;
@@ -1188,12 +1218,6 @@ cantidad-label {
   padding: 96px 0;
 }
 
-@media (max-width: 575.98px) {
-  .speakers .container {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-}
 
 .etiqueta {
   display: block;
@@ -1253,6 +1277,8 @@ cantidad-label {
   margin-bottom: 8px;
 }
 
+
+/* Chip: caja gris fuerte a todo el ancho de la tarjeta */
 .speaker-chip {
   display: block;
   width: 100%;
@@ -1280,6 +1306,52 @@ cantidad-label {
   margin-bottom: 0;
 }
 
+/* ===== Ajustes para mobile ===== */
+@media (max-width: 575.98px) {
+  .espacio {
+    padding: 32px 16px;
+  }
+
+  .barra-estadisticas {
+    padding: 24px 20px;
+  }
+
+  .checkout-contenedor {
+    padding: 1.5rem 1rem;
+  }
+
+  .card-seleccion {
+    padding: 1.25rem;
+  }
+
+  .card-resumen {
+    padding: 1.25rem;
+  }
+
+  .speakers .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  
+  .e404-card {
+    padding: 24px;
+  }
+
+  .modal-pago-header {
+    padding: 1.25rem 1.25rem 1.5rem;
+  }
+
+  .modal-pago-body {
+    padding: 1.25rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .speaker-nombre {
+    white-space: normal;
+    font-size: 16px;
+  }
+}
 .sponsor-form-container {
   max-width: 860px;
   margin: 0 auto;
@@ -1476,9 +1548,7 @@ cantidad-label {
   color: #ffffff;
 }
 
-.agenda__header {
-  top: 2rem;
-  }
+
 
 .agenda__kicker {
   color: #ef4444;
@@ -1491,11 +1561,12 @@ cantidad-label {
 }
 
 .agenda__titulo {
-  font-size: 2.75rem;
+  font-size: clamp(32px, 4vw, 44px);
   font-weight: 800;
   line-height: 1.1;
   margin-bottom: 1.25rem;
 }
+
 
 .agenda__descripcion {
   font-size: 0.9rem;
