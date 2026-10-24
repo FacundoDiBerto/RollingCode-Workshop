@@ -1552,3 +1552,7 @@ cantidad-label {
   font-size: 0.8rem;
   color: #71717a;
 }
+
+.link-txt {
+  text-decoration: none;
+}
