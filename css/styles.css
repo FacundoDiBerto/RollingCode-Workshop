@@ -1555,4 +1555,5 @@ cantidad-label {
 
 .link-txt {
   text-decoration: none;
+  color: var(--rc-white);
 }
