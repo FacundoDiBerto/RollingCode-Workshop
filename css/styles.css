@@ -1530,11 +1530,12 @@ cantidad-label {
 }
 
 .agenda__titulo {
-  font-size: 2.75rem;
+  font-size: clamp(32px, 4vw, 44px);
   font-weight: 800;
   line-height: 1.1;
   margin-bottom: 1.25rem;
 }
+
 
 .agenda__descripcion {
   font-size: 0.9rem;
