@@ -75,6 +75,7 @@
     </header>
 
     <main>
+      <!-- iniciopublicidad -->
       <div class="container-fluid d-flex justify-content-center espacio">
         <div class="workshop-card shadow-lg w-100 p-5 p-lg-5">
           <div class="row align-items-center">
@@ -158,7 +159,7 @@
           </div>
         </div>
       </div>
-
+      <!-- fin publicidad -->
       <section class="container">
         <div class="barra-estadisticas">
           <div class="row text-start text-md-start">
@@ -185,6 +186,7 @@
         </div>
       </section>
 
+      <!-- seccion speaker -->
       <section class="speakers" id="speakers">
         <div class="container">
           <span class="etiqueta">Speakers</span>
@@ -639,6 +641,8 @@
           </div>
         </div>
       </section>
+      <!-- fin speakers -->
+      <!-- seccion de compra segura -->
       <section class="py-4">
         <div class="container">
           <div class="checkout-contenedor">
@@ -771,6 +775,7 @@
           </div>
         </div>
       </section>
+      <!-- fin compra segura -->
       <section id="como-llegar" class="container py-5">
         <div class="row">
           <div class="col-md-6 col-sm-12">
@@ -834,6 +839,7 @@
           </div>
         </div>
       </section>
+      <!-- seccion de sponsors -->
       <section class="sponsors-section py-5">
         <div class="container">
           <div class="mb-5">
@@ -893,6 +899,7 @@
                     >
                   </div>
                 </div>
+                <p class="mapa-card-coords mb-0">-26.8366, -65.2072</p>
               </div>
               <div class="col">
                 <div class="sponsor-card card-diamond-2">
@@ -1325,8 +1332,173 @@
           </div>
         </div>
       </section>
+      <!-- fin sponsor -->
+      <!-- nuevo sponsor -->
+      <section class="sponsor-form-section">
+        <div class="container sponsor-form-container mx-auto">
+          <div class="text-center mb-5">
+            <h2 class="sponsor-tier-title fs-1 mb-3">Sumate como Sponsor</h2>
+            <p class="agenda-text form-subtitle mx-auto">
+              Conectá tu marca con más de 120 talentos IT, programadores junior,
+              semi-seniors y líderes tecnológicos del norte argentino. Completá
+              el formulario y nos contactaremos en menos de 24 horas hábiles.
+            </p>
+          </div>
+          <div class="sponsor-form-card mb-5">
+            <form action="#">
+              <div class="row g-4">
+                <div class="col-12 col-md-6">
+                  <label for="nombreSponsor" class="form-label-custom"
+                    >Nombre <span class="text-rc-red">*</span></label
+                  >
+                  <input
+                    type="text"
+                    id="nombreSponsor"
+                    class="form-input-custom"
+                    placeholder="Ej. Martín"
+                    minlength="2"
+                    maxlength="50"
+                    required
+                  />
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <label for="apellidoSponsor" class="form-label-custom"
+                    >Apellido <span class="text-rc-red">*</span></label
+                  >
+                  <input
+                    type="text"
+                    id="apellidoSponsor"
+                    class="form-input-custom"
+                    placeholder="Ej. González"
+                    required
+                    minlength="2"
+                    maxlength="50"
+                  />
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <label for="empresaSponsor" class="form-label-custom"
+                    >Empresa <span class="text-rc-red">*</span></label
+                  >
+                  <input
+                    type="text"
+                    id="empresaSponsor"
+                    class="form-input-custom"
+                    placeholder="Ej. Acme Technologies"
+                    required
+                    minlength="2"
+                    maxlength="100"
+                  />
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <label for="emailSponsor" class="form-label-custom"
+                    >Email corporativo <span class="text-rc-red">*</span></label
+                  >
+                  <input
+                    type="email"
+                    id="emailSponsor"
+                    class="form-input-custom"
+                    placeholder="martin@gmail.com"
+                    required
+                    maxlength="100"
+                  />
+                </div>
+
+                <div class="col-12">
+                  <label for="tipoSponsor" class="form-label-custom"
+                    >Tipo de sponsor <span class="text-rc-red">*</span></label
+                  >
+                  <select
+                    id="tipoSponsor"
+                    class="form-input-custom form-select-custom"
+                    required
+                  >
+                    <option value="" disabled selected>
+                      Seleccioná un nivel de sponsoreo
+                    </option>
+                    <option value="diamante">MAIN PARTNER</option>
+                    <option value="oro">GOLD TIER</option>
+                    <option value="bronce">BRONZE TIER</option>
+                  </select>
+                </div>
+
+                <div class="col-12">
+                  <label class="form-label-custom">Logo de la empresa</label>
+
+                  <label
+                    for="logoSponsor"
+                    class="file-drop-area w-100 d-block m-0"
+                  >
+                    <div class="mb-3">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="var(--rc-text-mute)"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"
+                        ></path>
+                        <polyline points="17 8 12 3 7 8"></polyline>
+                        <line x1="12" y1="3" x2="12" y2="15"></line>
+                      </svg>
+                    </div>
+                    <p class="mb-1 text-sm fw-bold">
+                      Hacé clic para adjuntar tu logo o arrastralo aquí
+                    </p>
+                    <p class="agenda-text text-xs m-0">
+                      Archivos aceptados: PNG, SVG, JPG o WEBP (Fondo
+                      transparente recomendado, máx. 5MB)
+                    </p>
+                  </label>
+                </div>
+
+                <div class="col-12">
+                  <label for="mensajeSponsor" class="form-label-custom"
+                    >Mensaje opcional</label
+                  >
+                  <textarea
+                    id="mensajeSponsor"
+                    class="form-input-custom"
+                    rows="4"
+                    maxlength="500"
+                    placeholder="Contanos sobre tu empresa y porque buscas ser Sponsor del evento"
+                  ></textarea>
+                </div>
+
+                <div class="col-12 mt-4">
+                  <button type="submit" class="btn-submit-sponsor w-100">
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="me-2"
+                    >
+                      <line x1="22" y1="2" x2="11" y2="13"></line>
+                      <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                    Enviar postulación de Sponsor
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- fin nuevo sponsor -->
     </main>
-    <footer class="py-4">
+    <footer class="py-5">
       <div
         class="container d-flex justify-content-between align-items-center flex-wrap gap-3"
       >
@@ -1675,6 +1847,7 @@
         </div>
       </div>
     </div>
+    <<<<<<< HEAD ======= >>>>>>> 345c80868a59c4f41b8a69d988c78ecc6345b14a
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
