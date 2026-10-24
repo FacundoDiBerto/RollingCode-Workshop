@@ -103,10 +103,10 @@ body {
   border: 1px solid var(--rc-border);
   padding: 40px;
   max-width: 450px;
-  margin-left: auto;
   width: 100%;
   height: fit-content;
 }
+
 
 .agenda-title {
   font-family: "Plus Jakarta Sans", sans-serif;
