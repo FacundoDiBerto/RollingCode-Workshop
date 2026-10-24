@@ -64,6 +64,9 @@
                 <a class="nav-link" href="#como-llegar">Cómo llegar</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="#sponsors">Sponsors</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link btn-comprar" href="#entradas"
                   >Comprar entrada</a
                 >
@@ -98,8 +101,8 @@
               </p>
 
               <div class="d-flex flex-column flex-sm-row gap-3 buttons-group">
-                <button class="btn-buy">Comprar entrada</button>
-                <button class="btn-agenda">Ver agenda</button>
+                <a href="#entradas"><button class="btn-buy">Comprar entrada</button></a>
+                <a href="#agenda"><button class="btn-agenda">Ver agenda</button></a>
               </div>
             </div>
 
@@ -642,8 +645,123 @@
         </div>
       </section>
       <!-- fin speakers -->
+      <section id="agenda" class="agenda py-5">
+        <div class="container">
+          <div class="row gx-lg-5">
+            <div class="col-lg-4 mb-5 mb-lg-0">
+              <div class="agenda__header">
+                <span class="agenda__kicker">AGENDA</span>
+                <h2 class="agenda__titulo">Jueves 19 de<br />noviembre</h2>
+                <p class="agenda__descripcion">
+                  Diez charlas cortas para salir con un plan claro. Al final
+                  queda tiempo para preguntas y networking.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <ul class="agenda__lista">
+                <li class="agenda__item">
+                  <div class="agenda__hora">18:00</div>
+                  <div class="agenda__info">
+                    <h4 class="agenda__charla">Acreditación y bienvenida</h4>
+                  </div>
+                </li>
+
+                <li class="agenda__item">
+                  <div class="agenda__hora">18:20</div>
+                  <div class="agenda__info">
+                    <h4 class="agenda__charla">Tu primer día como developer</h4>
+                    <span class="agenda__speaker">Daniela Cardozo</span>
+                  </div>
+                </li>
+
+                <li class="agenda__item">
+                  <div class="agenda__hora">18:40</div>
+                  <div class="agenda__info">
+                    <h4 class="agenda__charla">De cero a tu primer proyecto</h4>
+                    <span class="agenda__speaker">Franco Diaz</span>
+                  </div>
+                </li>
+
+                <li class="agenda__item">
+                  <div class="agenda__hora">19:00</div>
+                  <div class="agenda__info">
+                    <h4 class="agenda__charla">Armá tu portfolio con IA</h4>
+                    <span class="agenda__speaker">Gaston</span>
+                  </div>
+                </li>
+
+                <li class="agenda__item">
+                  <div class="agenda__hora">19:20</div>
+                  <div class="agenda__info">
+                    <h4 class="agenda__charla">Git y GitHub sin miedo</h4>
+                    <span class="agenda__speaker">Mauro</span>
+                  </div>
+                </li>
+
+                <li class="agenda__item">
+                  <div class="agenda__hora">19:40</div>
+                  <div class="agenda__info">
+                    <h4 class="agenda__charla">Tu primer backend con Node</h4>
+                    <span class="agenda__speaker">Jose Diaz</span>
+                  </div>
+                </li>
+
+                <li class="agenda__item">
+                  <div class="agenda__hora">20:00</div>
+                  <div class="agenda__info">
+                    <h4 class="agenda__charla">
+                      Preparate para tu primera entrevista
+                    </h4>
+                    <span class="agenda__speaker">Tomas Gomez</span>
+                  </div>
+                </li>
+
+                <li class="agenda__item">
+                  <div class="agenda__hora">20:20</div>
+                  <div class="agenda__info">
+                    <h4 class="agenda__charla">Mi primer trabajo en IT</h4>
+                    <span class="agenda__speaker">Pablo Basso</span>
+                  </div>
+                </li>
+
+                <li class="agenda__item">
+                  <div class="agenda__hora">20:40</div>
+                  <div class="agenda__info">
+                    <h4 class="agenda__charla">Testing: cómo no romper todo</h4>
+                    <span class="agenda__speaker">Julian Martin</span>
+                  </div>
+                </li>
+
+                <li class="agenda__item">
+                  <div class="agenda__hora">21:00</div>
+                  <div class="agenda__info">
+                    <h4 class="agenda__charla">Diseño para developers</h4>
+                    <span class="agenda__speaker">Tomas Escudero</span>
+                  </div>
+                </li>
+
+                <li class="agenda__item">
+                  <div class="agenda__hora">21:20</div>
+                  <div class="agenda__info">
+                    <h4 class="agenda__charla">Tu primera base de datos</h4>
+                    <span class="agenda__speaker">Andres Perlo</span>
+                  </div>
+                </li>
+
+                <li class="agenda__item">
+                  <div class="agenda__hora">21:40</div>
+                  <div class="agenda__info">
+                    <h4 class="agenda__charla">Preguntas y networking</h4>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- seccion de compra segura -->
-      <section class="py-4">
+      <section id="entradas" class="py-4">
         <div class="container">
           <div class="checkout-contenedor">
             <div
@@ -840,8 +958,9 @@
         </div>
       </section>
       <!-- seccion de sponsors -->
-      <section class="sponsors-section py-5">
+      <section id="sponsors" class="sponsors-section py-5">
         <div class="container">
+          <p class="section-label mb-3">SPONSORS</p>
           <div class="mb-5">
             <div
               class="d-flex flex-column flex-md-row align-items-start align-items-md-center gap-3 mb-4"
@@ -899,7 +1018,6 @@
                     >
                   </div>
                 </div>
-                <p class="mapa-card-coords mb-0">-26.8366, -65.2072</p>
               </div>
               <div class="col">
                 <div class="sponsor-card card-diamond-2">
@@ -1847,7 +1965,6 @@
         </div>
       </div>
     </div>
-    <<<<<<< HEAD ======= >>>>>>> 345c80868a59c4f41b8a69d988c78ecc6345b14a
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
