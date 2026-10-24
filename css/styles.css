@@ -1557,3 +1557,8 @@ cantidad-label {
   text-decoration: none;
   color: var(--rc-white);
 }
+
+.link-txt2{
+  color: var(--rc-black);
+  text-decoration: none;
+}
