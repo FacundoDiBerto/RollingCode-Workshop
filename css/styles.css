@@ -569,11 +569,6 @@ cantidad-label {
   background-color: var(--rc-surface-2);
 }
 
-.badge-outline.badge-sm {
-  padding: 4px 12px;
-  font-size: 12px;
-}
-
 .logo-box {
   width: 96px;
   height: 96px;
