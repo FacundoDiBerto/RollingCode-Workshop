@@ -27,7 +27,7 @@
   </head>
 
   <body>
-    <header>
+    <header class="sticky-top">
       <nav class="navbar navbar-expand-lg navbar-dark py-3">
         <div class="container">
           <a class="navbar-brand" href="index.html">
@@ -64,6 +64,9 @@
                 <a class="nav-link" href="#como-llegar">Cómo llegar</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="#sponsors">Sponsors</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link btn-comprar" href="#entradas"
                   >Comprar entrada</a
                 >
@@ -75,6 +78,7 @@
     </header>
 
     <main>
+      <!-- iniciopublicidad -->
       <div class="container-fluid d-flex justify-content-center espacio">
   <div class="workshop-card shadow-lg w-100 p-4 p-lg-5">
 
@@ -98,8 +102,12 @@
               </p>
 
               <div class="d-flex flex-column flex-sm-row gap-3 buttons-group">
-                <button class="btn-buy">Comprar entrada</button>
-                <button class="btn-agenda">Ver agenda</button>
+                <a href="#entradas"
+                  ><button class="btn-buy">Comprar entrada</button></a
+                >
+                <a href="#agenda"
+                  ><button class="btn-agenda">Ver agenda</button></a
+                >
               </div>
             </div>
 
@@ -159,7 +167,7 @@
           </div>
         </div>
       </div>
-
+      <!-- fin publicidad -->
       <section class="container">
         <div class="barra-estadisticas">
           <div class="row text-start text-md-start">
@@ -186,6 +194,7 @@
         </div>
       </section>
 
+      <!-- seccion speaker -->
       <section class="speakers" id="speakers">
         <div class="container">
           <span class="etiqueta">Speakers</span>
@@ -194,16 +203,23 @@
           <!-- ESCRITORIO (lg en adelante): grilla de 2 filas x 5 -->
           <div class="d-none d-lg-block">
             <div class="row row-cols-5 g-4">
-
               <!-- 1 -->
               <div class="col">
                 <article class="speaker-card h-100">
                   <div class="speaker-foto">
-                    <img src="./assets/speakers/speaker-01-tomas-escudero.jpg" alt="Tomas Escudero">
+                    <img
+                      src="./assets/speakers/speaker-01-tomas-escudero.jpg"
+                      alt="Tomas Escudero"
+                    />
                   </div>
                   <h3 class="speaker-nombre">Tomas Escudero</h3>
-                  <span class="speaker-chip speaker-chip--activo">Diseño para developers</span>
-                  <p class="speaker-texto">Qué mira un equipo de diseño antes de que escribas código y cómo leer un mockup para construirlo igual.</p>
+                  <span class="speaker-chip speaker-chip--activo"
+                    >Diseño para developers</span
+                  >
+                  <p class="speaker-texto">
+                    Qué mira un equipo de diseño antes de que escribas código y
+                    cómo leer un mockup para construirlo igual.
+                  </p>
                 </article>
               </div>
 
@@ -211,11 +227,17 @@
               <div class="col">
                 <article class="speaker-card h-100">
                   <div class="speaker-foto">
-                    <img src="./assets/speakers/speaker-02-franco-diaz.jpg" alt="Franco Diaz">
+                    <img
+                      src="./assets/speakers/speaker-02-franco-diaz.jpeg"
+                      alt="Franco Diaz"
+                    />
                   </div>
                   <h3 class="speaker-nombre">Franco Diaz</h3>
                   <span class="speaker-chip">De cero a tu primer proyecto</span>
-                  <p class="speaker-texto">Un recorrido para pasar de mirar tutoriales a terminar una app simple con HTML, JavaScript y React.</p>
+                  <p class="speaker-texto">
+                    Un recorrido para pasar de mirar tutoriales a terminar una
+                    app simple con HTML, JavaScript y React.
+                  </p>
                 </article>
               </div>
 
@@ -223,11 +245,17 @@
               <div class="col">
                 <article class="speaker-card h-100">
                   <div class="speaker-foto">
-                    <img src="./assets/speakers/speaker-03-gaston.jpg" alt="Gaston">
+                    <img
+                      src="./assets/speakers/speaker-03-gaston.jpg"
+                      alt="Gaston"
+                    />
                   </div>
                   <h3 class="speaker-nombre">Gaston</h3>
-                  <span class="speaker-chip">Armá tu portfolio   con IA</span>
-                  <p class="speaker-texto">Cómo usar asistentes de IA para construir y publicar un portfolio que muestre lo que sabés hacer.</p>
+                  <span class="speaker-chip">Armá tu portfolio con IA</span>
+                  <p class="speaker-texto">
+                    Cómo usar asistentes de IA para construir y publicar un
+                    portfolio que muestre lo que sabés hacer.
+                  </p>
                 </article>
               </div>
 
@@ -235,11 +263,17 @@
               <div class="col">
                 <article class="speaker-card h-100">
                   <div class="speaker-foto">
-                    <img src="./assets/speakers/speaker-04-mauro.jpg" alt="Mauro">
+                    <img
+                      src="./assets/speakers/speaker-04-mauro.jpg"
+                      alt="Mauro"
+                    />
                   </div>
                   <h3 class="speaker-nombre">Mauro</h3>
                   <span class="speaker-chip">Git y GitHub sin miedo</span>
-                  <p class="speaker-texto">Los comandos que vas a usar todos los días y cómo trabajar en equipo sin pisar el código de otros.</p>
+                  <p class="speaker-texto">
+                    Los comandos que vas a usar todos los días y cómo trabajar
+                    en equipo sin pisar el código de otros.
+                  </p>
                 </article>
               </div>
 
@@ -247,11 +281,17 @@
               <div class="col">
                 <article class="speaker-card h-100">
                   <div class="speaker-foto">
-                    <img src="./assets/speakers/speaker-05-jose-diaz.jpg" alt="Jose Diaz">
+                    <img
+                      src="./assets/speakers/speaker-05-jose-diaz.jpeg"
+                      alt="Jose Diaz"
+                    />
                   </div>
                   <h3 class="speaker-nombre">Jose Diaz</h3>
                   <span class="speaker-chip">Tu primer backend con Node</span>
-                  <p class="speaker-texto">Cómo se arma una API, qué hace una base de datos y por dónde empezar para conectar todo.</p>
+                  <p class="speaker-texto">
+                    Cómo se arma una API, qué hace una base de datos y por dónde
+                    empezar para conectar todo.
+                  </p>
                 </article>
               </div>
 
@@ -259,11 +299,19 @@
               <div class="col">
                 <article class="speaker-card h-100">
                   <div class="speaker-foto">
-                    <img src="./assets/speakers/speaker-06-tomas-gomez.jpg" alt="Tomas Gomez">
+                    <img
+                      src="./assets/speakers/speaker-06-tomas-gomez.jpeg"
+                      alt="Tomas Gomez"
+                    />
                   </div>
                   <h3 class="speaker-nombre">Tomas Gomez</h3>
-                  <span class="speaker-chip">Preparate para tu primera entrevista</span>
-                  <p class="speaker-texto">Qué preguntan en una entrevista técnica, cómo practicar y cómo contar tus proyectos con claridad.</p>
+                  <span class="speaker-chip"
+                    >Preparate para tu primera entrevista</span
+                  >
+                  <p class="speaker-texto">
+                    Qué preguntan en una entrevista técnica, cómo practicar y
+                    cómo contar tus proyectos con claridad.
+                  </p>
                 </article>
               </div>
 
@@ -271,11 +319,17 @@
               <div class="col">
                 <article class="speaker-card h-100">
                   <div class="speaker-foto">
-                    <img src="./assets/speakers/speaker-07-pablo-basso.jpg" alt="Pablo Basso">
+                    <img
+                      src="./assets/speakers/speaker-07-pablo-basso.jpeg"
+                      alt="Pablo Basso"
+                    />
                   </div>
                   <h3 class="speaker-nombre">Pablo Basso</h3>
                   <span class="speaker-chip">Mi primer trabajo en IT</span>
-                  <p class="speaker-texto">Una charla en primera persona sobre cómo se consigue el primer puesto y qué se aprende en los primeros meses.</p>
+                  <p class="speaker-texto">
+                    Una charla en primera persona sobre cómo se consigue el
+                    primer puesto y qué se aprende en los primeros meses.
+                  </p>
                 </article>
               </div>
 
@@ -283,11 +337,17 @@
               <div class="col">
                 <article class="speaker-card h-100">
                   <div class="speaker-foto">
-                    <img src="./assets/speakers/speaker-08-julian-martin.jpg" alt="Julian Martin">
+                    <img
+                      src="./assets/speakers/speaker-08-julian-martin.jpg"
+                      alt="Julian Martin"
+                    />
                   </div>
                   <h3 class="speaker-nombre">Julian Martin</h3>
                   <span class="speaker-chip">Testing: cómo no romper todo</span>
-                  <p class="speaker-texto">Qué es testear, por qué importa y cómo escribir tus primeras pruebas sin complicarte.</p>
+                  <p class="speaker-texto">
+                    Qué es testear, por qué importa y cómo escribir tus primeras
+                    pruebas sin complicarte.
+                  </p>
                 </article>
               </div>
 
@@ -295,11 +355,17 @@
               <div class="col">
                 <article class="speaker-card h-100">
                   <div class="speaker-foto">
-                    <img src="./assets/speakers/speaker-09-daniela-cardozo.jpg" alt="Daniela Cardozo">
+                    <img
+                      src="./assets/speakers/speaker-09-daniela-cardozo.jpeg"
+                      alt="Daniela Cardozo"
+                    />
                   </div>
                   <h3 class="speaker-nombre">Daniela Cardozo</h3>
                   <span class="speaker-chip">Tu primer día como developer</span>
-                  <p class="speaker-texto">Qué esperar de tu primera semana en un equipo, qué herramientas usar y cómo pedir ayuda sin miedo.</p>
+                  <p class="speaker-texto">
+                    Qué esperar de tu primera semana en un equipo, qué
+                    herramientas usar y cómo pedir ayuda sin miedo.
+                  </p>
                 </article>
               </div>
 
@@ -307,64 +373,102 @@
               <div class="col">
                 <article class="speaker-card h-100">
                   <div class="speaker-foto">
-                    <img src="./assets/speakers/speaker-10-andres-perlo.jpg" alt="Andres Perlo">
+                    <img
+                      src="./assets/speakers/speaker-10-andres-perlo.jpeg"
+                      alt="Andres Perlo"
+                    />
                   </div>
                   <h3 class="speaker-nombre">Andres Perlo</h3>
                   <span class="speaker-chip">Tu primera base de datos</span>
-                  <p class="speaker-texto">Qué es una base de datos, para qué sirve y cómo guardar y consultar tus primeros datos.</p>
+                  <p class="speaker-texto">
+                    Qué es una base de datos, para qué sirve y cómo guardar y
+                    consultar tus primeros datos.
+                  </p>
                 </article>
               </div>
-
             </div>
           </div>
 
           <!-- CELULAR Y TABLET (menos de lg): carrusel de Bootstrap, 4 tarjetas por slide -->
           <div class="d-lg-none">
-            <div id="carruselSpeakers" class="carousel slide carrusel-speakers" data-bs-touch="true" data-bs-interval="false">
-
+            <div
+              id="carruselSpeakers"
+              class="carousel slide carrusel-speakers"
+              data-bs-touch="true"
+              data-bs-interval="false"
+            >
               <div class="carousel-inner">
-
                 <!-- Slide 1 -->
                 <div class="carousel-item active">
                   <div class="row row-cols-2 row-cols-md-4 g-2">
                     <div class="col">
                       <article class="speaker-card h-100">
                         <div class="speaker-foto">
-                          <img src="./assets/speakers/speaker-01-tomas-escudero.jpg" alt="Tomas Escudero">
+                          <img
+                            src="./assets/speakers/speaker-01-tomas-escudero.jpg"
+                            alt="Tomas Escudero"
+                          />
                         </div>
                         <h3 class="speaker-nombre">Tomas Escudero</h3>
-                        <span class="speaker-chip speaker-chip--activo">Diseño para developers</span>
-                        <p class="speaker-texto">Qué mira un equipo de diseño antes de que escribas código y cómo leer un mockup para construirlo igual.</p>
+                        <span class="speaker-chip speaker-chip--activo"
+                          >Diseño para developers</span
+                        >
+                        <p class="speaker-texto">
+                          Qué mira un equipo de diseño antes de que escribas
+                          código y cómo leer un mockup para construirlo igual.
+                        </p>
                       </article>
                     </div>
                     <div class="col">
                       <article class="speaker-card h-100">
                         <div class="speaker-foto">
-                          <img src="./assets/speakers/speaker-02-franco-diaz.jpg" alt="Franco Diaz">
+                          <img
+                            src="./assets/speakers/speaker-02-franco-diaz.jpeg"
+                            alt="Franco Diaz"
+                          />
                         </div>
                         <h3 class="speaker-nombre">Franco Diaz</h3>
-                        <span class="speaker-chip">De cero a tu primer proyecto</span>
-                        <p class="speaker-texto">Un recorrido para pasar de mirar tutoriales a terminar una app simple con HTML, JavaScript y React.</p>
+                        <span class="speaker-chip"
+                          >De cero a tu primer proyecto</span
+                        >
+                        <p class="speaker-texto">
+                          Un recorrido para pasar de mirar tutoriales a terminar
+                          una app simple con HTML, JavaScript y React.
+                        </p>
                       </article>
                     </div>
                     <div class="col">
                       <article class="speaker-card h-100">
                         <div class="speaker-foto">
-                          <img src="./assets/speakers/speaker-03-gaston.jpg" alt="Gaston">
+                          <img
+                            src="./assets/speakers/speaker-03-gaston.jpg"
+                            alt="Gaston"
+                          />
                         </div>
                         <h3 class="speaker-nombre">Gaston</h3>
-                        <span class="speaker-chip">Armá tu portfolio   con IA</span>
-                        <p class="speaker-texto">Cómo usar asistentes de IA para construir y publicar un portfolio que muestre lo que sabés hacer.</p>
+                        <span class="speaker-chip"
+                          >Armá tu portfolio con IA</span
+                        >
+                        <p class="speaker-texto">
+                          Cómo usar asistentes de IA para construir y publicar
+                          un portfolio que muestre lo que sabés hacer.
+                        </p>
                       </article>
                     </div>
                     <div class="col">
                       <article class="speaker-card h-100">
                         <div class="speaker-foto">
-                          <img src="./assets/speakers/speaker-04-mauro.jpg" alt="Mauro">
+                          <img
+                            src="./assets/speakers/speaker-04-mauro.jpg"
+                            alt="Mauro"
+                          />
                         </div>
                         <h3 class="speaker-nombre">Mauro</h3>
                         <span class="speaker-chip">Git y GitHub sin miedo</span>
-                        <p class="speaker-texto">Los comandos que vas a usar todos los días y cómo trabajar en equipo sin pisar el código de otros.</p>
+                        <p class="speaker-texto">
+                          Los comandos que vas a usar todos los días y cómo
+                          trabajar en equipo sin pisar el código de otros.
+                        </p>
                       </article>
                     </div>
                   </div>
@@ -376,41 +480,74 @@
                     <div class="col">
                       <article class="speaker-card h-100">
                         <div class="speaker-foto">
-                          <img src="./assets/speakers/speaker-05-jose-diaz.jpg" alt="Jose Diaz">
+                          <img
+                            src="./assets/speakers/speaker-05-jose-diaz.jpeg"
+                            alt="Jose Diaz"
+                          />
                         </div>
                         <h3 class="speaker-nombre">Jose Diaz</h3>
-                        <span class="speaker-chip">Tu primer backend con Node</span>
-                        <p class="speaker-texto">Cómo se arma una API, qué hace una base de datos y por dónde empezar para conectar todo.</p>
+                        <span class="speaker-chip"
+                          >Tu primer backend con Node</span
+                        >
+                        <p class="speaker-texto">
+                          Cómo se arma una API, qué hace una base de datos y por
+                          dónde empezar para conectar todo.
+                        </p>
                       </article>
                     </div>
                     <div class="col">
                       <article class="speaker-card h-100">
                         <div class="speaker-foto">
-                          <img src="./assets/speakers/speaker-06-tomas-gomez.jpg" alt="Tomas Gomez">
+                          <img
+                            src="./assets/speakers/speaker-06-tomas-gomez.jpeg"
+                            alt="Tomas Gomez"
+                          />
                         </div>
                         <h3 class="speaker-nombre">Tomas Gomez</h3>
-                        <span class="speaker-chip">Preparate para tu primera entrevista</span>
-                        <p class="speaker-texto">Qué preguntan en una entrevista técnica, cómo practicar y cómo contar tus proyectos con claridad.</p>
+                        <span class="speaker-chip"
+                          >Preparate para tu primera entrevista</span
+                        >
+                        <p class="speaker-texto">
+                          Qué preguntan en una entrevista técnica, cómo
+                          practicar y cómo contar tus proyectos con claridad.
+                        </p>
                       </article>
                     </div>
                     <div class="col">
                       <article class="speaker-card h-100">
                         <div class="speaker-foto">
-                          <img src="./assets/speakers/speaker-07-pablo-basso.jpg" alt="Pablo Basso">
+                          <img
+                            src="./assets/speakers/speaker-07-pablo-basso.jpeg"
+                            alt="Pablo Basso"
+                          />
                         </div>
                         <h3 class="speaker-nombre">Pablo Basso</h3>
-                        <span class="speaker-chip">Mi primer trabajo en IT</span>
-                        <p class="speaker-texto">Una charla en primera persona sobre cómo se consigue el primer puesto y qué se aprende en los primeros meses.</p>
+                        <span class="speaker-chip"
+                          >Mi primer trabajo en IT</span
+                        >
+                        <p class="speaker-texto">
+                          Una charla en primera persona sobre cómo se consigue
+                          el primer puesto y qué se aprende en los primeros
+                          meses.
+                        </p>
                       </article>
                     </div>
                     <div class="col">
                       <article class="speaker-card h-100">
                         <div class="speaker-foto">
-                          <img src="./assets/speakers/speaker-08-julian-martin.jpg" alt="Julian Martin">
+                          <img
+                            src="./assets/speakers/speaker-08-julian-martin.jpg"
+                            alt="Julian Martin"
+                          />
                         </div>
                         <h3 class="speaker-nombre">Julian Martin</h3>
-                        <span class="speaker-chip">Testing: cómo no romper todo</span>
-                        <p class="speaker-texto">Qué es testear, por qué importa y cómo escribir tus primeras pruebas sin complicarte.</p>
+                        <span class="speaker-chip"
+                          >Testing: cómo no romper todo</span
+                        >
+                        <p class="speaker-texto">
+                          Qué es testear, por qué importa y cómo escribir tus
+                          primeras pruebas sin complicarte.
+                        </p>
                       </article>
                     </div>
                   </div>
@@ -422,51 +559,214 @@
                     <div class="col">
                       <article class="speaker-card h-100">
                         <div class="speaker-foto">
-                          <img src="./assets/speakers/speaker-09-daniela-cardozo.jpg" alt="Daniela Cardozo">
+                          <img
+                            src="./assets/speakers/speaker-09-daniela-cardozo.jpeg"
+                            alt="Daniela Cardozo"
+                          />
                         </div>
                         <h3 class="speaker-nombre">Daniela Cardozo</h3>
-                        <span class="speaker-chip">Tu primer día como developer</span>
-                        <p class="speaker-texto">Qué esperar de tu primera semana en un equipo, qué herramientas usar y cómo pedir ayuda sin miedo.</p>
+                        <span class="speaker-chip"
+                          >Tu primer día como developer</span
+                        >
+                        <p class="speaker-texto">
+                          Qué esperar de tu primera semana en un equipo, qué
+                          herramientas usar y cómo pedir ayuda sin miedo.
+                        </p>
                       </article>
                     </div>
                     <div class="col">
                       <article class="speaker-card h-100">
                         <div class="speaker-foto">
-                          <img src="./assets/speakers/speaker-10-andres-perlo.jpg" alt="Andres Perlo">
+                          <img
+                            src="./assets/speakers/speaker-10-andres-perlo.jpeg"
+                            alt="Andres Perlo"
+                          />
                         </div>
                         <h3 class="speaker-nombre">Andres Perlo</h3>
-                        <span class="speaker-chip">Tu primera base de datos</span>
-                        <p class="speaker-texto">Qué es una base de datos, para qué sirve y cómo guardar y consultar tus primeros datos.</p>
+                        <span class="speaker-chip"
+                          >Tu primera base de datos</span
+                        >
+                        <p class="speaker-texto">
+                          Qué es una base de datos, para qué sirve y cómo
+                          guardar y consultar tus primeros datos.
+                        </p>
                       </article>
                     </div>
                   </div>
                 </div>
-
               </div>
 
               <!-- Flechas -->
-              <button class="carousel-control-prev carrusel-flecha" type="button" data-bs-target="#carruselSpeakers" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <button
+                class="carousel-control-prev carrusel-flecha"
+                type="button"
+                data-bs-target="#carruselSpeakers"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
                 <span class="visually-hidden">Anterior</span>
               </button>
-              <button class="carousel-control-next carrusel-flecha" type="button" data-bs-target="#carruselSpeakers" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <button
+                class="carousel-control-next carrusel-flecha"
+                type="button"
+                data-bs-target="#carruselSpeakers"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
                 <span class="visually-hidden">Siguiente</span>
               </button>
 
               <!-- Puntitos -->
               <div class="carousel-indicators carrusel-puntos">
-                <button type="button" data-bs-target="#carruselSpeakers" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carruselSpeakers" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carruselSpeakers" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button
+                  type="button"
+                  data-bs-target="#carruselSpeakers"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carruselSpeakers"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carruselSpeakers"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
               </div>
-
             </div>
           </div>
-
         </div>
       </section>
-      <section class="py-4">
+      <!-- fin speakers -->
+      <section id="agenda" class="agenda py-5">
+        <div class="container">
+          <div class="row gx-lg-5">
+            <div class="col-lg-4 mb-5 mb-lg-0">
+              <div class="agenda__header">
+                <span class="agenda__kicker">AGENDA</span>
+                <h2 class="agenda__titulo">Jueves 19 de<br />noviembre</h2>
+                <p class="agenda__descripcion">
+                  Diez charlas cortas para salir con un plan claro. Al final
+                  queda tiempo para preguntas y networking.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <ul class="agenda__lista">
+                <li class="agenda__item">
+                  <div class="agenda__hora">18:00</div>
+                  <div class="agenda__info">
+                    <h4 class="agenda__charla">Acreditación y bienvenida</h4>
+                  </div>
+                </li>
+
+                <li class="agenda__item">
+                  <div class="agenda__hora">18:20</div>
+                  <div class="agenda__info">
+                    <h4 class="agenda__charla">Tu primer día como developer</h4>
+                    <span class="agenda__speaker">Daniela Cardozo</span>
+                  </div>
+                </li>
+
+                <li class="agenda__item">
+                  <div class="agenda__hora">18:40</div>
+                  <div class="agenda__info">
+                    <h4 class="agenda__charla">De cero a tu primer proyecto</h4>
+                    <span class="agenda__speaker">Franco Diaz</span>
+                  </div>
+                </li>
+
+                <li class="agenda__item">
+                  <div class="agenda__hora">19:00</div>
+                  <div class="agenda__info">
+                    <h4 class="agenda__charla">Armá tu portfolio con IA</h4>
+                    <span class="agenda__speaker">Gaston</span>
+                  </div>
+                </li>
+
+                <li class="agenda__item">
+                  <div class="agenda__hora">19:20</div>
+                  <div class="agenda__info">
+                    <h4 class="agenda__charla">Git y GitHub sin miedo</h4>
+                    <span class="agenda__speaker">Mauro</span>
+                  </div>
+                </li>
+
+                <li class="agenda__item">
+                  <div class="agenda__hora">19:40</div>
+                  <div class="agenda__info">
+                    <h4 class="agenda__charla">Tu primer backend con Node</h4>
+                    <span class="agenda__speaker">Jose Diaz</span>
+                  </div>
+                </li>
+
+                <li class="agenda__item">
+                  <div class="agenda__hora">20:00</div>
+                  <div class="agenda__info">
+                    <h4 class="agenda__charla">
+                      Preparate para tu primera entrevista
+                    </h4>
+                    <span class="agenda__speaker">Tomas Gomez</span>
+                  </div>
+                </li>
+
+                <li class="agenda__item">
+                  <div class="agenda__hora">20:20</div>
+                  <div class="agenda__info">
+                    <h4 class="agenda__charla">Mi primer trabajo en IT</h4>
+                    <span class="agenda__speaker">Pablo Basso</span>
+                  </div>
+                </li>
+
+                <li class="agenda__item">
+                  <div class="agenda__hora">20:40</div>
+                  <div class="agenda__info">
+                    <h4 class="agenda__charla">Testing: cómo no romper todo</h4>
+                    <span class="agenda__speaker">Julian Martin</span>
+                  </div>
+                </li>
+
+                <li class="agenda__item">
+                  <div class="agenda__hora">21:00</div>
+                  <div class="agenda__info">
+                    <h4 class="agenda__charla">Diseño para developers</h4>
+                    <span class="agenda__speaker">Tomas Escudero</span>
+                  </div>
+                </li>
+
+                <li class="agenda__item">
+                  <div class="agenda__hora">21:20</div>
+                  <div class="agenda__info">
+                    <h4 class="agenda__charla">Tu primera base de datos</h4>
+                    <span class="agenda__speaker">Andres Perlo</span>
+                  </div>
+                </li>
+
+                <li class="agenda__item">
+                  <div class="agenda__hora">21:40</div>
+                  <div class="agenda__info">
+                    <h4 class="agenda__charla">Preguntas y networking</h4>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- seccion de compra segura -->
+      <section id="entradas" class="py-4">
         <div class="container">
           <div class="checkout-contenedor">
             <div
@@ -492,26 +792,34 @@
                     <h3 class="card-seleccion-titulo">Elegí tu entrada</h3>
                     <div class="opcion-ticket opcion-ticket--activa">
                       <div>
-                        <h4 class="opcion-nombre">Early Bird</h4>
-                        <p class="opcion-detalle">
-                          Presencial · hasta el 31/10
-                        </p>
+                        <a href="pages/error404.html" class="link-txt"
+                          ><h4 class="opcion-nombre">Early Bird</h4>
+                          <p class="opcion-detalle">
+                            Presencial · hasta el 31/10
+                          </p>
+                        </a>
                       </div>
                       <span class="opcion-precio">$25.000</span>
                     </div>
                     <div class="opcion-ticket opcion-ticket--inactiva">
                       <div>
-                        <h4 class="opcion-nombre">General</h4>
-                        <p class="opcion-detalle">Presencial · desde el 1/11</p>
+                        <a href="pages/error404.html" class="link-txt2"
+                          ><h4 class="opcion-nombre">General</h4>
+                          <p class="opcion-detalle">
+                            Presencial · desde el 1/11
+                          </p>
+                        </a>
                       </div>
                       <span class="opcion-precio">$35.000</span>
                     </div>
                     <div class="opcion-ticket opcion-ticket--inactiva">
                       <div>
-                        <h4 class="opcion-nombre">Virtual</h4>
-                        <p class="opcion-detalle">
-                          Transmisión en vivo y grabación
-                        </p>
+                        <a href="pages/error404.html" class="link-txt2">
+                          <h4 class="opcion-nombre">Virtual</h4>
+                          <p class="opcion-detalle">
+                            Transmisión en vivo y grabación
+                          </p>
+                        </a>
                       </div>
                       <span class="opcion-precio">$15.000</span>
                     </div>
@@ -527,7 +835,12 @@
                     </div>
                   </div>
                   <div>
-                    <button type="button" class="btn-checkout-continuar" data-bs-toggle="modal" data-bs-target="#modalPago">
+                    <button
+                      type="button"
+                      class="btn-checkout-continuar"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modalPago"
+                    >
                       Continuar
                     </button>
                     <p class="disclaimer-texto">
@@ -593,320 +906,233 @@
           </div>
         </div>
       </section>
-    </main>
-    <section class="sponsors-section py-5">
-      <div class="container">
-        <div class="mb-5">
-          <div
-            class="d-flex flex-column flex-md-row align-items-start align-items-md-center gap-3 mb-4"
-          >
-            <h2 class="sponsor-tier-title text-rc-red">MAIN PARTNERS</h2>
-            <span class="badge-outline badge-sm tier-diamond-1 text-uppercase"
-              >Tier Diamante</span
-            >
+      <!-- fin compra segura -->
+      <section id="como-llegar" class="container py-5">
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <p class="section-label mb-3">CÓMO LLEGAR</p>
+            <h2 class="section-title mb-4">
+              Te esperamos en Rolling Code School
+            </h2>
+            <div class="d-flex align-items-start mb-4">
+              <img
+                src="assets/iconos/ubicacion.svg"
+                alt="Ubicación"
+                class="me-3 custom-icon"
+              />
+              <div>
+                <p class="direccion-principal mb-1">
+                  Calle Gral. Paz 576, Entrepiso
+                </p>
+                <p class="agenda-text mb-0">
+                  4000 San Miguel de Tucumán, Tucumán
+                </p>
+              </div>
+            </div>
+            <div class="d-flex gap-2 mb-4 flex-wrap">
+              <span class="badge-outline">Jueves 19/11</span>
+              <span class="badge-outline">18.00 hs</span>
+              <span class="badge-outline">Entrepiso</span>
+            </div>
+            <div class="d-flex flex-column flex-sm-row gap-3">
+              <a
+                href="https://www.bing.com/maps/search?style=r&ss=id.local_ypid%3A%22YN7C4469F943FA45B8%22&q=RollingCode+School%2C+Calle+Gral.+Paz+576%2C+4000+San+Miguel+de+Tucum%C3%A1n%2C+Argentina&st=RollingCode+School&sfa=Calle+Gral.+Paz+576%2C+4000+San+Miguel+de+Tucum%C3%A1n%2C+Argentina&FORM=QBMV&cp=-26.836590%7E-65.207161&lvl=16"
+                target="_blank"
+                class="btn rounded-pill btn-maps"
+              >
+                Abrir en Bing Maps
+              </a>
+              <a href="#entradas" class="btn btn-agenda">Comprar entrada</a>
+            </div>
           </div>
-          <p class="agenda-text mb-4">
-            Presencia estelar en conferencias, stands experienciales y becas
-            formativas
-          </p>
 
-          <div class="row row-cols-1 row-cols-lg-3 g-4">
-            <div class="col">
-              <div class="sponsor-card card-diamond-1">
-                <div
-                  class="d-flex justify-content-between align-items-start mb-4"
-                >
-                  <span
-                    class="badge-outline badge-xs tier-diamond-1 text-uppercase"
-                    >Lead Cloud Partner</span
-                  >
-
-                  <a
-                    href="#"
-                    class="icon-link-circle"
-                    aria-label="Visitar sitio"
-                  >
-                    ↗
-                  </a>
+          <div class="col-md-6 col-sm-12 py-4">
+            <figure class="mapa-wrapper m-0 tamanio-mapa">
+              <iframe
+                class="mapa-iframe"
+                src="https://www.bing.com/maps/embed?h=420&w=600&cp=-26.8366~-65.2072&lvl=16&typ=d&sty=r&sp=point.-26.8366_-65.2072_Rolling%20Code%20School&src=SHELL&FORM=MBEDV8"
+                title="Mapa de ubicación de Rolling Code School"
+                scrolling="no"
+                loading="lazy"
+              ></iframe>
+              <div
+                class="mapa-card d-flex justify-content-between align-items-center"
+              >
+                <div>
+                  <p class="mapa-card-title mb-1">Rolling Code School</p>
+                  <p class="mapa-card-text mb-0">
+                    Gral. Paz 576 - San Miguel de Tucumán
+                  </p>
                 </div>
-                <div class="text-center my-4">
-                  <div class="logo-box mx-auto mb-3">
-                    <img
-                      src="https://www.gstatic.com/cgc/renaissance/image/MultiPath_Bottom_2X_Centered_static.png"
-                      alt="logo sponsor"
-                      class="sponsor-logo"
-                    />
-                  </div>
-
-                  <h3 class="sponsor-name">Google Cloud</h3>
-                </div>
-                <p class="agenda-text text-center flex-grow-1">
-                  Infraestructura global ultra-escalable, Gemini AI APIs y
-                  programas de formación profesional para devs.
-                </p>
-                <div
-                  class="d-flex justify-content-between mt-4 pt-3 border-top border-rc"
-                >
-                  <span class="agenda-text text-sm">Cloud & AI</span>
-                  <span class="tier-diamond-1 fw-bold text-rc-red text-sm"
-                    >100% Verified</span
-                  >
-                </div>
+                <p class="mapa-card-coords mb-0">-26.8366, -65.2072</p>
               </div>
-            </div>
-            <div class="col">
-              <div class="sponsor-card card-diamond-2">
-                <div
-                  class="d-flex justify-content-between align-items-start mb-4"
-                >
-                  <span
-                    class="badge-outline badge-xs tier-diamond-2 text-uppercase"
-                    >Infrastructure Partner</span
-                  >
-                  <a
-                    href="#"
-                    class="icon-link-circle"
-                    aria-label="Visitar sitio"
-                  >
-                    ↗
-                  </a>
-                </div>
-                <div class="text-center my-4">
-                  <div class="logo-box mx-auto mb-3">
-                    <img
-                      src="https://polotecnologico.net/wp-content/uploads/2023/08/amazon-web-services-1-300x300.png"
-                      alt="logo sponsor"
-                      class="sponsor-logo"
-                    />
-                  </div>
-                  <h3 class="sponsor-name">Amazon Web Services</h3>
-                </div>
-                <p class="agenda-text text-center flex-grow-1">
-                  Servicios de nube, arquitecturas serverless y vouchers para
-                  certificaciones oficiales.
-                </p>
-                <div
-                  class="d-flex justify-content-between mt-4 pt-3 border-top border-rc"
-                >
-                  <span class="agenda-text text-sm">Cloud Hosting</span>
-                  <span class="tier-diamond-2 fw-bold text-rc-red text-sm"
-                    >Global Leader</span
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="sponsor-card card-diamond-3">
-                <div
-                  class="d-flex justify-content-between align-items-start mb-4"
-                >
-                  <span
-                    class="badge-outline badge-xs tier-diamond-3 text-uppercase"
-                    >Fintech & E-Commerce</span
-                  >
-                  <a
-                    href="#"
-                    class="icon-link-circle"
-                    aria-label="Visitar sitio"
-                  >
-                    ↗
-                  </a>
-                </div>
-                <div class="text-center my-4">
-                  <div class="logo-box mx-auto mb-3">
-                    <img
-                      src="https://images.seeklogo.com/logo-png/65/2/mercado-libre-logo-png_seeklogo-653365.png"
-                      alt="logo sponsor"
-                      class="sponsor-logo"
-                    />
-                  </div>
-                  <h3 class="sponsor-name">Mercado Libre</h3>
-                </div>
-                <p class="agenda-text text-center flex-grow-1">
-                  El mayor ecosistema tech de Latinoamérica impulsando becas,
-                  hackathons y pasantías.
-                </p>
-                <div
-                  class="d-flex justify-content-between mt-4 pt-3 border-top border-rc"
-                >
-                  <span class="agenda-text text-sm">Fintech Scale</span>
-                  <span class="tier-diamond-3 fw-bold text-rc-red text-sm"
-                    >Unicorn LATAM</span
-                  >
-                </div>
-              </div>
-            </div>
+            </figure>
           </div>
         </div>
-    
-
-        <div class="mb-5">
-          <div
-            class="d-flex flex-column flex-md-row align-items-start align-items-md-center gap-3 mb-4"
-          >
-            <h2 class="sponsor-tier-title text-rc-red">GOLD TIER</h2>
-            <span class="badge-outline badge-sm tier-diamond-2 text-uppercase"
-              >Nivel oro</span
+      </section>
+      <!-- seccion de sponsors -->
+      <section id="sponsors" class="sponsors-section py-5">
+        <div class="container">
+          <p class="section-label mb-3">SPONSORS</p>
+          <div class="mb-5">
+            <div
+              class="d-flex flex-column flex-md-row align-items-start align-items-md-center gap-3 mb-4"
             >
-          </div>
-          <p class="agenda-text mb-4">
-            Líderes de producto, framework y transformación digital global.
-          </p>
-        </div>
-        <div class="d-flex flex-wrap justify-content-center gap-4">
-          <div
-            class="sponsor-card card-diamond-2 card-gold align-items-center text-center p-4"
-          >
-            <div
-              class="d-flex justify-content-between align-items-start mb-2"
-            ></div>
-            <div class="text-center my-4">
-              <div class="logo-box mx-auto mb-3">
-                <img
-                  src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Microsoft_Azure.svg/1280px-Microsoft_Azure.svg.png?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=thumbnail"
-                  alt="logo sponsor"
-                  class="sponsor-logo"
-                />
-              </div>
-
-              <h3 class="sponsor-name mb-0">Microsoft</h3>
-              <p class="agenda-text text-center flex-grow-1 mt-1 mb-3 text-sm">
-                Azure & Dev Tools
-              </p>
-
-              <span
-                class="badge-outline tier-diamond-2 m-3 text-center align-self-center mt-1 mb-3 text-sm"
-                >Enterprise</span
+              <h2 class="sponsor-tier-title text-rc-red">MAIN PARTNERS</h2>
+              <span class="badge-outline badge-sm tier-diamond-1 text-uppercase"
+                >Tier Diamante</span
               >
+            </div>
+            <p class="agenda-text mb-4">
+              Presencia estelar en conferencias, stands experienciales y becas
+              formativas
+            </p>
+
+            <div class="row row-cols-1 row-cols-lg-3 g-4">
+              <div class="col">
+                <div class="sponsor-card card-diamond-1">
+                  <div
+                    class="d-flex justify-content-between align-items-start mb-4"
+                  >
+                    <span
+                      class="badge-outline badge-xs tier-diamond-1 text-uppercase"
+                      >Lead Cloud Partner</span
+                    >
+
+                    <a
+                      href="#"
+                      class="icon-link-circle"
+                      aria-label="Visitar sitio"
+                    >
+                      ↗
+                    </a>
+                  </div>
+                  <div class="text-center my-4">
+                    <div class="logo-box mx-auto mb-3">
+                      <img
+                        src="https://www.gstatic.com/cgc/renaissance/image/MultiPath_Bottom_2X_Centered_static.png"
+                        alt="logo sponsor"
+                        class="sponsor-logo"
+                      />
+                    </div>
+
+                    <h3 class="sponsor-name">Google Cloud</h3>
+                  </div>
+                  <p class="agenda-text text-center flex-grow-1">
+                    Infraestructura global ultra-escalable, Gemini AI APIs y
+                    programas de formación profesional para devs.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between mt-4 pt-3 border-top border-rc"
+                  >
+                    <span class="agenda-text text-sm">Cloud & AI</span>
+                    <span class="tier-diamond-1 fw-bold text-rc-red text-sm"
+                      >100% Verified</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="sponsor-card card-diamond-2">
+                  <div
+                    class="d-flex justify-content-between align-items-start mb-4"
+                  >
+                    <span
+                      class="badge-outline badge-xs tier-diamond-2 text-uppercase"
+                      >Infrastructure Partner</span
+                    >
+                    <a
+                      href="#"
+                      class="icon-link-circle"
+                      aria-label="Visitar sitio"
+                    >
+                      ↗
+                    </a>
+                  </div>
+                  <div class="text-center my-4">
+                    <div class="logo-box mx-auto mb-3">
+                      <img
+                        src="https://polotecnologico.net/wp-content/uploads/2023/08/amazon-web-services-1-300x300.png"
+                        alt="logo sponsor"
+                        class="sponsor-logo"
+                      />
+                    </div>
+                    <h3 class="sponsor-name">Amazon Web Services</h3>
+                  </div>
+                  <p class="agenda-text text-center flex-grow-1">
+                    Servicios de nube, arquitecturas serverless y vouchers para
+                    certificaciones oficiales.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between mt-4 pt-3 border-top border-rc"
+                  >
+                    <span class="agenda-text text-sm">Cloud Hosting</span>
+                    <span class="tier-diamond-2 fw-bold text-rc-red text-sm"
+                      >Global Leader</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="sponsor-card card-diamond-3">
+                  <div
+                    class="d-flex justify-content-between align-items-start mb-4"
+                  >
+                    <span
+                      class="badge-outline badge-xs tier-diamond-3 text-uppercase"
+                      >Fintech & E-Commerce</span
+                    >
+                    <a
+                      href="#"
+                      class="icon-link-circle"
+                      aria-label="Visitar sitio"
+                    >
+                      ↗
+                    </a>
+                  </div>
+                  <div class="text-center my-4">
+                    <div class="logo-box mx-auto mb-3">
+                      <img
+                        src="https://images.seeklogo.com/logo-png/65/2/mercado-libre-logo-png_seeklogo-653365.png"
+                        alt="logo sponsor"
+                        class="sponsor-logo"
+                      />
+                    </div>
+                    <h3 class="sponsor-name">Mercado Libre</h3>
+                  </div>
+                  <p class="agenda-text text-center flex-grow-1">
+                    El mayor ecosistema tech de Latinoamérica impulsando becas,
+                    hackathons y pasantías.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between mt-4 pt-3 border-top border-rc"
+                  >
+                    <span class="agenda-text text-sm">Fintech Scale</span>
+                    <span class="tier-diamond-3 fw-bold text-rc-red text-sm"
+                      >Unicorn LATAM</span
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div
-            class="sponsor-card card-diamond-2 card-gold align-items-center text-center p-4"
-          >
+          <div class="mb-5">
             <div
-              class="d-flex justify-content-between align-items-start mb-2"
-            ></div>
-            <div class="text-center my-4">
-              <div class="logo-box mx-auto mb-3">
-                <img
-                  src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png"
-                  alt="logo sponsor"
-                  class="sponsor-logo"
-                />
-              </div>
-
-              <h3 class="sponsor-name mb-0">GitHub</h3>
-              <p class="agenda-text text-center flex-grow-1 mt-1 mb-3 text-xxs">
-                Open Source & Copilot
-              </p>
-
-              <span
-                class="badge-outline tier-diamond-2 m-3 text-center align-self-center mt-1 mb-3 text-sm"
-                >Community</span
-              >
-            </div>
-          </div>
-
-          <div
-            class="sponsor-card card-diamond-2 card-gold align-items-center text-center p-4"
-          >
-            <div
-              class="d-flex justify-content-between align-items-start mb-2"
-            ></div>
-            <div class="text-center my-4">
-              <div class="logo-box mx-auto mb-3">
-                <img
-                  src="https://companieslogo.com/img/orig/GLOB-13857c80.png?t=1720244492"
-                  alt="logo sponsor"
-                  class="sponsor-logo"
-                />
-              </div>
-
-              <h3 class="sponsor-name mb-0">Globant</h3>
-              <p class="agenda-text text-center flex-grow-1 mt-1 mb-3 text-sm">
-                Tech Reinvention
-              </p>
-
-              <span
-                class="badge-outline tier-diamond-2 m-3 text-center align-self-center mt-1 mb-3 text-sm"
-                >Globaal Talent</span
-              >
-            </div>
-          </div>
-
-          <div
-            class="sponsor-card card-diamond-2 card-gold align-items-center text-center p-4"
-          >
-            <div
-              class="d-flex justify-content-between align-items-start mb-2"
-            ></div>
-            <div class="text-center my-4">
-              <div class="logo-box mx-auto mb-3">
-                <img
-                  src="https://images.icon-icons.com/2699/PNG/512/auth_logo_icon_169534.png"
-                  alt="logo sponsor"
-                  class="sponsor-logo"
-                />
-              </div>
-
-              <h3 class="sponsor-name mb-0">Auth0</h3>
-              <p class="agenda-text text-center flex-grow-1 mt-1 mb-3 text-sm">
-                Identity & Security
-              </p>
-
-              <span
-                class="badge-outline tier-diamond-2 m-3 text-center align-self-center mt-1 mb-3 text-sm"
-                >Security</span
-              >
-            </div>
-          </div>
-
-          <div
-            class="sponsor-card card-diamond-2 card-gold align-items-center text-center p-4"
-          >
-            <div
-              class="d-flex justify-content-between align-items-start mb-2"
-            ></div>
-            <div class="text-center my-4">
-              <div class="logo-box mx-auto mb-3">
-                <img
-                  src="https://images.icon-icons.com/3915/PNG/512/vercel_logo_icon_249276.png"
-                  alt="logo sponsor"
-                  class="sponsor-logo"
-                />
-              </div>
-
-              <h3 class="sponsor-name mb-0">Vercel</h3>
-              <p class="agenda-text text-center flex-grow-1 mt-1 mb-3 text-xxs">
-                Frontend Cloud & Next
-              </p>
-
-              <span
-                class="badge-outline tier-diamond-2 m-3 text-center align-self-center mt-1 mb-3 text-sm"
-                >Deployment</span
-              >
-            </div>
-          </div>
-        </div>
-
-        <div class="mb-5 pt-5">
-          <div
-            class="d-flex flex-column flex-md-row align-items-start align-items-md-center gap-3 mb-4"
-          >
-            <h2 class="sponsor-tier-title text-rc-red">BRONZE TIER</h2>
-            <span class="badge-outline badge-sm tier-diamond-3 text-uppercase"
-              >nivel bronce</span
+              class="d-flex flex-column flex-md-row align-items-start align-items-md-center gap-3 mb-4"
             >
+              <h2 class="sponsor-tier-title text-rc-red">GOLD TIER</h2>
+              <span class="badge-outline badge-sm tier-diamond-2 text-uppercase"
+                >Nivel oro</span
+              >
+            </div>
+            <p class="agenda-text mb-4">
+              Líderes de producto, framework y transformación digital global.
+            </p>
           </div>
-          <p class="agenda-text mb-4">
-            Herramientas y plataformas predilectas de la comunidad de
-            desarrolladores
-          </p>
-
-          <div class="d-flex flex-wrap justify-content-center gap-3">
+          <div class="d-flex flex-wrap justify-content-center gap-4">
             <div
-              class="sponsor-card card-bronze align-items-center text-center p-3"
+              class="sponsor-card card-diamond-2 card-gold align-items-center text-center p-4"
             >
               <div
                 class="d-flex justify-content-between align-items-start mb-2"
@@ -914,7 +1140,123 @@
               <div class="text-center my-4">
                 <div class="logo-box mx-auto mb-3">
                   <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1sRw_Nd_Qf_MGes0bJkTNimqCWlScKi6mNIr4nUpMzQ&s=10"
+                    src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Microsoft_Azure.svg/1280px-Microsoft_Azure.svg.png?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=thumbnail"
+                    alt="logo sponsor"
+                    class="sponsor-logo"
+                  />
+                </div>
+
+                <h3 class="sponsor-name mb-0">Microsoft</h3>
+                <p
+                  class="agenda-text text-center flex-grow-1 mt-1 mb-3 text-sm"
+                >
+                  Azure & Dev Tools
+                </p>
+
+                <span
+                  class="badge-outline tier-diamond-2 m-3 text-center align-self-center mt-1 mb-3 text-sm"
+                  >Enterprise</span
+                >
+              </div>
+            </div>
+
+            <div
+              class="sponsor-card card-diamond-2 card-gold align-items-center text-center p-4"
+            >
+              <div
+                class="d-flex justify-content-between align-items-start mb-2"
+              ></div>
+              <div class="text-center my-4">
+                <div class="logo-box mx-auto mb-3">
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                    alt="logo sponsor"
+                    class="sponsor-logo"
+                  />
+                </div>
+
+                <h3 class="sponsor-name mb-0">GitHub</h3>
+                <p
+                  class="agenda-text text-center flex-grow-1 mt-1 mb-3 text-xxs"
+                >
+                  Open Source & Copilot
+                </p>
+
+                <span
+                  class="badge-outline tier-diamond-2 m-3 text-center align-self-center mt-1 mb-3 text-sm"
+                  >Community</span
+                >
+              </div>
+            </div>
+
+            <div
+              class="sponsor-card card-diamond-2 card-gold align-items-center text-center p-4"
+            >
+              <div
+                class="d-flex justify-content-between align-items-start mb-2"
+              ></div>
+              <div class="text-center my-4">
+                <div class="logo-box mx-auto mb-3">
+                  <img
+                    src="https://companieslogo.com/img/orig/GLOB-13857c80.png?t=1720244492"
+                    alt="logo sponsor"
+                    class="sponsor-logo"
+                  />
+                </div>
+
+                <h3 class="sponsor-name mb-0">Globant</h3>
+                <p
+                  class="agenda-text text-center flex-grow-1 mt-1 mb-3 text-sm"
+                >
+                  Tech Reinvention
+                </p>
+
+                <span
+                  class="badge-outline tier-diamond-2 m-3 text-center align-self-center mt-1 mb-3 text-sm"
+                  >Globaal Talent</span
+                >
+              </div>
+            </div>
+
+            <div
+              class="sponsor-card card-diamond-2 card-gold align-items-center text-center p-4"
+            >
+              <div
+                class="d-flex justify-content-between align-items-start mb-2"
+              ></div>
+              <div class="text-center my-4">
+                <div class="logo-box mx-auto mb-3">
+                  <img
+                    src="https://images.icon-icons.com/2699/PNG/512/auth_logo_icon_169534.png"
+                    alt="logo sponsor"
+                    class="sponsor-logo"
+                  />
+                </div>
+
+                <h3 class="sponsor-name mb-0">Auth0</h3>
+                <p
+                  class="agenda-text text-center flex-grow-1 mt-1 mb-3 text-sm"
+                >
+                  Identity & Security
+                </p>
+
+                <span
+                  class="badge-outline tier-diamond-2 m-3 text-center align-self-center mt-1 mb-3 text-sm"
+                  >Security</span
+                >
+              </div>
+            </div>
+
+            <div
+              class="sponsor-card card-diamond-2 card-gold align-items-center text-center p-4"
+            >
+              <div
+                class="d-flex justify-content-between align-items-start mb-2"
+              ></div>
+              <div class="text-center my-4">
+                <div class="logo-box mx-auto mb-3">
+                  <img
+                    src="https://images.icon-icons.com/3915/PNG/512/vercel_logo_icon_249276.png"
                     alt="logo sponsor"
                     class="sponsor-logo"
                   />
@@ -924,199 +1266,445 @@
                 <p
                   class="agenda-text text-center flex-grow-1 mt-1 mb-3 text-xxs"
                 >
-                  Open-Source DB
+                  Frontend Cloud & Next
                 </p>
+
+                <span
+                  class="badge-outline tier-diamond-2 m-3 text-center align-self-center mt-1 mb-3 text-sm"
+                  >Deployment</span
+                >
               </div>
             </div>
+          </div>
 
+          <div class="mb-5 pt-5">
             <div
-              class="sponsor-card card-bronze align-items-center text-center p-3"
+              class="d-flex flex-column flex-md-row align-items-start align-items-md-center gap-3 mb-4"
             >
-              <div
-                class="d-flex justify-content-between align-items-start mb-2"
-              ></div>
-              <div class="text-center my-4">
-                <div class="logo-box mx-auto mb-3">
-                  <img
-                    src="https://w7.pngwing.com/pngs/410/265/png-transparent-digitalocean-icon-hd-logo.png"
-                    alt="logo sponsor"
-                    class="sponsor-logo"
-                  />
-                </div>
-
-                <h3 class="sponsor-name mb-0">DigitalOcean</h3>
-                <p
-                  class="agenda-text text-center flex-grow-1 mt-1 mb-3 text-xxs"
-                >
-                  Cloud VPS
-                </p>
-              </div>
+              <h2 class="sponsor-tier-title text-rc-red">BRONZE TIER</h2>
+              <span class="badge-outline badge-sm tier-diamond-3 text-uppercase"
+                >nivel bronce</span
+              >
             </div>
+            <p class="agenda-text mb-4">
+              Herramientas y plataformas predilectas de la comunidad de
+              desarrolladores
+            </p>
 
-            <div
-              class="sponsor-card card-bronze align-items-center text-center p-3"
-            >
+            <div class="d-flex flex-wrap justify-content-center gap-3">
               <div
-                class="d-flex justify-content-between align-items-start mb-2"
-              ></div>
-              <div class="text-center my-4">
-                <div class="logo-box mx-auto mb-3">
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/9/94/Cloudflare_Logo.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original"
-                    alt="logo sponsor"
-                    class="sponsor-logo"
-                  />
-                </div>
+                class="sponsor-card card-bronze align-items-center text-center p-3"
+              >
+                <div
+                  class="d-flex justify-content-between align-items-start mb-2"
+                ></div>
+                <div class="text-center my-4">
+                  <div class="logo-box mx-auto mb-3">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/webp/supabase.webp"
+                      alt="logo sponsor"
+                      class="sponsor-logo"
+                    />
+                  </div>
 
-                <h3 class="sponsor-name mb-0">Cloudflare</h3>
-                <p
-                  class="agenda-text text-center flex-grow-1 mt-1 mb-3 text-xxs"
-                >
-                  Edge & DNS
-                </p>
+                  <h3 class="sponsor-name mb-0">Supabase</h3>
+                  <p
+                    class="agenda-text text-center flex-grow-1 mt-1 mb-3 text-xxs"
+                  >
+                    Open-Source DB
+                  </p>
+                </div>
               </div>
-            </div>
 
-            <div
-              class="sponsor-card card-bronze align-items-center text-center p-3"
-            >
               <div
-                class="d-flex justify-content-between align-items-start mb-2"
-              ></div>
-              <div class="text-center my-4">
-                <div class="logo-box mx-auto mb-3">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZF_TzIjgKKQ5gzhFQ1jNbsJ41ZFUtrSyoyon8g54f5-TuESsOz-hbFiA&s=10"
-                    alt="logo sponsor"
-                    class="sponsor-logo"
-                  />
-                </div>
+                class="sponsor-card card-bronze align-items-center text-center p-3"
+              >
+                <div
+                  class="d-flex justify-content-between align-items-start mb-2"
+                ></div>
+                <div class="text-center my-4">
+                  <div class="logo-box mx-auto mb-3">
+                    <img
+                      src="https://companieslogo.com/img/orig/DOCN-6eec72eb.png?t=1720244491"
+                      alt="logo sponsor"
+                      class="sponsor-logo"
+                    />
+                  </div>
 
-                <h3 class="sponsor-name mb-0">MongoDB</h3>
-                <p
-                  class="agenda-text text-center flex-grow-1 mt-1 mb-3 text-xxs"
-                >
-                  Document DB
-                </p>
+                  <h3 class="sponsor-name mb-0">DigitalOcean</h3>
+                  <p
+                    class="agenda-text text-center flex-grow-1 mt-1 mb-3 text-xxs"
+                  >
+                    Cloud VPS
+                  </p>
+                </div>
               </div>
-            </div>
 
-            <div
-              class="sponsor-card card-bronze align-items-center text-center p-3"
-            >
               <div
-                class="d-flex justify-content-between align-items-start mb-2"
-              ></div>
-              <div class="text-center my-4">
-                <div class="logo-box mx-auto mb-3">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmMgGPXrdBNc04bN5lCAr_2j7rEFoc3AOjMsErUZzT88E6888UxggJHwzH&s=10"
-                    alt="logo sponsor"
-                    class="sponsor-logo"
-                  />
-                </div>
+                class="sponsor-card card-bronze align-items-center text-center p-3"
+              >
+                <div
+                  class="d-flex justify-content-between align-items-start mb-2"
+                ></div>
+                <div class="text-center my-4">
+                  <div class="logo-box mx-auto mb-3">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/9/94/Cloudflare_Logo.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original"
+                      alt="logo sponsor"
+                      class="sponsor-logo"
+                    />
+                  </div>
 
-                <h3 class="sponsor-name mb-0">Docker</h3>
-                <p
-                  class="agenda-text text-center flex-grow-1 mt-1 mb-3 text-xxs"
-                >
-                  Containers
-                </p>
+                  <h3 class="sponsor-name mb-0">Cloudflare</h3>
+                  <p
+                    class="agenda-text text-center flex-grow-1 mt-1 mb-3 text-xxs"
+                  >
+                    Edge & DNS
+                  </p>
+                </div>
               </div>
-            </div>
 
-            <div
-              class="sponsor-card card-bronze align-items-center text-center p-3"
-            >
               <div
-                class="d-flex justify-content-between align-items-start mb-2"
-              ></div>
-              <div class="text-center my-4">
-                <div class="logo-box mx-auto mb-3">
-                  <img
-                    src="https://images.icon-icons.com/2699/PNG/512/stripe_logo_icon_167962.png"
-                    alt="logo sponsor"
-                    class="sponsor-logo"
-                  />
-                </div>
+                class="sponsor-card card-bronze align-items-center text-center p-3"
+              >
+                <div
+                  class="d-flex justify-content-between align-items-start mb-2"
+                ></div>
+                <div class="text-center my-4">
+                  <div class="logo-box mx-auto mb-3">
+                    <img
+                      src="https://www.manualweb.net/img/logos/mongodb.png"
+                      alt="logo sponsor"
+                      class="sponsor-logo"
+                    />
+                  </div>
 
-                <h3 class="sponsor-name mb-0">Stripe</h3>
-                <p
-                  class="agenda-text text-center flex-grow-1 mt-1 mb-3 text-xxs"
-                >
-                  Payment API
-                </p>
+                  <h3 class="sponsor-name mb-0">MongoDB</h3>
+                  <p
+                    class="agenda-text text-center flex-grow-1 mt-1 mb-3 text-xxs"
+                  >
+                    Document DB
+                  </p>
+                </div>
               </div>
-            </div>
 
-            <div
-              class="sponsor-card card-bronze align-items-center text-center p-3"
-            >
               <div
-                class="d-flex justify-content-between align-items-start mb-2"
-              ></div>
-              <div class="text-center my-4">
-                <div class="logo-box mx-auto mb-3">
-                  <img
-                    src="https://images.icon-icons.com/3053/PNG/512/postman_macos_bigsur_icon_189815.png"
-                    alt="logo sponsor"
-                    class="sponsor-logo"
-                  />
-                </div>
+                class="sponsor-card card-bronze align-items-center text-center p-3"
+              >
+                <div
+                  class="d-flex justify-content-between align-items-start mb-2"
+                ></div>
+                <div class="text-center my-4">
+                  <div class="logo-box mx-auto mb-3">
+                    <img
+                      src="https://avatars.githubusercontent.com/u/7739233?v=4"
+                      alt="logo sponsor"
+                      class="sponsor-logo"
+                    />
+                  </div>
 
-                <h5 class="sponsor-name mb-0">Postman</h5>
-                <p
-                  class="agenda-text text-center flex-grow-1 mt-1 mb-3 text-xxs"
-                >
-                  API Plataform
-                </p>
+                  <h3 class="sponsor-name mb-0">Docker</h3>
+                  <p
+                    class="agenda-text text-center flex-grow-1 mt-1 mb-3 text-xxs"
+                  >
+                    Containersq
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="sponsor-card card-bronze align-items-center text-center p-3"
+              >
+                <div
+                  class="d-flex justify-content-between align-items-start mb-2"
+                ></div>
+                <div class="text-center my-4">
+                  <div class="logo-box mx-auto mb-3">
+                    <img
+                      src="https://images.icon-icons.com/2699/PNG/512/stripe_logo_icon_167962.png"
+                      alt="logo sponsor"
+                      class="sponsor-logo"
+                    />
+                  </div>
+
+                  <h3 class="sponsor-name mb-0">Stripe</h3>
+                  <p
+                    class="agenda-text text-center flex-grow-1 mt-1 mb-3 text-xxs"
+                  >
+                    Payment API
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="sponsor-card card-bronze align-items-center text-center p-3"
+              >
+                <div
+                  class="d-flex justify-content-between align-items-start mb-2"
+                ></div>
+                <div class="text-center my-4">
+                  <div class="logo-box mx-auto mb-3">
+                    <img
+                      src="https://images.icon-icons.com/3053/PNG/512/postman_macos_bigsur_icon_189815.png"
+                      alt="logo sponsor"
+                      class="sponsor-logo"
+                    />
+                  </div>
+
+                  <h5 class="sponsor-name mb-0">Postman</h5>
+                  <p
+                    class="agenda-text text-center flex-grow-1 mt-1 mb-3 text-xxs"
+                  >
+                    API Plataform
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <!-- fin sponsor -->
+      <!-- nuevo sponsor -->
+      <section class="sponsor-form-section">
+        <div class="container sponsor-form-container mx-auto">
+          <div class="text-center mb-5">
+            <h2 class="sponsor-tier-title fs-1 mb-3">Sumate como Sponsor</h2>
+            <p class="agenda-text form-subtitle mx-auto">
+              Conectá tu marca con más de 120 talentos IT, programadores junior,
+              semi-seniors y líderes tecnológicos del norte argentino. Completá
+              el formulario y nos contactaremos en menos de 24 horas hábiles.
+            </p>
+          </div>
+          <div class="sponsor-form-card mb-5">
+            <form action="pages/error404.html">
+              <div class="row g-4">
+                <div class="col-12 col-md-6">
+                  <label for="nombreSponsor" class="form-label-custom"
+                    >Nombre <span class="text-rc-red">*</span></label
+                  >
+                  <input
+                    type="text"
+                    id="nombreSponsor"
+                    class="form-input-custom"
+                    placeholder="Ej. Martín"
+                    minlength="2"
+                    maxlength="50"
+                    required
+                  />
+                </div>
 
-  </main>
-  <footer class="py-4">
-    <div class="container d-flex justify-content-between align-items-center flex-wrap gap-3">
-      <a href="index.html" class="footer-logo">
-        <img src="assets/logo/logo-rolling-blanco.png" alt="Rolling Code School" class="footer-logo-img" />
-      </a>
-      <ul class="list-unstyled d-flex gap-3 mb-0">
-        <li>
-          <a href="#" class="social-icon">
-            <img src="assets/iconos/instagram.svg" alt="Instagram" />
-          </a>
-        </li>
-        <li>
-          <a href="#" class="social-icon">
-            <img src="assets/iconos/facebook.svg" alt="Facebook" />
-          </a>
-        </li>
-        <li>
-          <a href="#" class="social-icon">
-            <img src="assets/iconos/linkedin.svg" alt="LinkedIn" />
-          </a>
-        </li>
-        <li>
-          <a href="#" class="social-icon">
-            <img src="assets/iconos/youtube.svg" alt="YouTube" />
-          </a>
-        </li>
-        <li>
-          <a href="#" class="social-icon">
-            <img src="assets/iconos/x.svg" alt="X" />
-          </a>
-        </li>
-        <li>
-          <a href="#" class="social-icon">
-            <img src="assets/iconos/github.svg" alt="GitHub" />
-          </a>
-        </li>
-      </ul>
-    </div>
-  </footer>
-<div class="modal fade" id="modalPago" tabindex="-1" aria-labelledby="modalPagoLabel" aria-hidden="true">
+                <div class="col-12 col-md-6">
+                  <label for="apellidoSponsor" class="form-label-custom"
+                    >Apellido <span class="text-rc-red">*</span></label
+                  >
+                  <input
+                    type="text"
+                    id="apellidoSponsor"
+                    class="form-input-custom"
+                    placeholder="Ej. González"
+                    required
+                    minlength="2"
+                    maxlength="50"
+                  />
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <label for="empresaSponsor" class="form-label-custom"
+                    >Empresa <span class="text-rc-red">*</span></label
+                  >
+                  <input
+                    type="text"
+                    id="empresaSponsor"
+                    class="form-input-custom"
+                    placeholder="Ej. Acme Technologies"
+                    required
+                    minlength="2"
+                    maxlength="100"
+                  />
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <label for="emailSponsor" class="form-label-custom"
+                    >Email corporativo <span class="text-rc-red">*</span></label
+                  >
+                  <input
+                    type="email"
+                    id="emailSponsor"
+                    class="form-input-custom"
+                    placeholder="martin@gmail.com"
+                    required
+                    maxlength="100"
+                  />
+                </div>
+
+                <div class="col-12">
+                  <label for="tipoSponsor" class="form-label-custom"
+                    >Tipo de sponsor <span class="text-rc-red">*</span></label
+                  >
+                  <select
+                    id="tipoSponsor"
+                    class="form-input-custom form-select-custom"
+                    required
+                  >
+                    <option value="" disabled selected>
+                      Seleccioná un nivel de sponsoreo
+                    </option>
+                    <option value="diamante">MAIN PARTNER</option>
+                    <option value="oro">GOLD TIER</option>
+                    <option value="bronce">BRONZE TIER</option>
+                  </select>
+                </div>
+
+                <div class="col-12">
+                  <label class="form-label-custom">Logo de la empresa</label>
+
+                  <label
+                    for="logoSponsor"
+                    class="file-drop-area w-100 d-block m-0"
+                  >
+                    <div class="mb-3">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="var(--rc-text-mute)"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"
+                        ></path>
+                        <polyline points="17 8 12 3 7 8"></polyline>
+                        <line x1="12" y1="3" x2="12" y2="15"></line>
+                      </svg>
+                    </div>
+                    <p class="mb-1 text-sm fw-bold">
+                      Hacé clic para adjuntar tu logo o arrastralo aquí
+                    </p>
+                    <p class="agenda-text text-xs m-0">
+                      Archivos aceptados: PNG, SVG, JPG o WEBP (Fondo
+                      transparente recomendado, máx. 5MB)
+                    </p>
+                  </label>
+                </div>
+
+                <div class="col-12">
+                  <label for="mensajeSponsor" class="form-label-custom"
+                    >Mensaje opcional</label
+                  >
+                  <textarea
+                    id="mensajeSponsor"
+                    class="form-input-custom"
+                    rows="4"
+                    maxlength="500"
+                    placeholder="Contanos sobre tu empresa y porque buscas ser Sponsor del evento"
+                  ></textarea>
+                </div>
+
+                <div class="col-12 mt-4">
+                  <button type="submit" class="btn-submit-sponsor w-100">
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="me-2"
+                    >
+                      <line x1="22" y1="2" x2="11" y2="13"></line>
+                      <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                    Enviar postulación de Sponsor
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- fin nuevo sponsor -->
+    </main>
+    <footer class="py-5">
+      <div
+        class="container d-flex justify-content-between align-items-center flex-wrap gap-3"
+      >
+        <a href="index.html" class="footer-logo">
+          <img
+            src="assets/logo/logo-rolling-blanco.png"
+            alt="Rolling Code School"
+            class="footer-logo-img"
+          />
+        </a>
+        <ul class="list-unstyled d-flex gap-3 mb-0">
+          <li>
+            <a
+              href="https://www.instagram.com/rollingcodeschool?mdxt=MTh3NzBmNXNxamRtNQ=="
+              target="_blank"
+              class="social-icon link-txt"
+            >
+              <img src="assets/iconos/instagram.svg" alt="Instagram" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/share/1FWm1Rt2Vi/"
+              target="_blank"
+              class="social-icon link-txt"
+            >
+              <img src="assets/iconos/facebook.svg" alt="Facebook" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/school/rollingcodeschool/"
+              target="_blank"
+              class="social-icon link-txt"
+            >
+              <img src="assets/iconos/linkedin.svg" alt="LinkedIn" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://youtube.com/@rollingcode7175?si=DgPewfYJimZEykXt"
+              target="_blank"
+              class="social-icon link-txt"
+            >
+              <img src="assets/iconos/youtube.svg" alt="YouTube" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/rollingcodeok"
+              target="_blank"
+              class="social-icon link-txt"
+            >
+              <img src="assets/iconos/x.svg" alt="X" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/rollingcodestudio"
+              target="_blank"
+              class="social-icon link-txt"
+            >
+              <img src="assets/iconos/github.svg" alt="GitHub" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <div
+      class="modal fade"
+      id="modalPago"
+      tabindex="-1"
+      aria-labelledby="modalPagoLabel"
+      aria-hidden="true"
+    >
       <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content modal-pago">
           <div class="modal-pago-header">
@@ -1405,14 +1993,18 @@
                     </div>
                   </div>
                 </div>
+
                 <button type="submit" class="btn-confirmar-pago">
-                  Confirmar pago &rarr;
+                  <a href="/pages/error404.html" class="link-txt"
+                    >Confirmar pago &rarr;</a
+                  >
                 </button>
               </div>
             </form>
           </div>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
-
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
