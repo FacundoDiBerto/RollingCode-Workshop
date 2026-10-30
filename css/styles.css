@@ -1581,6 +1581,7 @@ cantidad-label {
   align-items: flex-start;
   padding: 1.25rem 0;
   border-bottom: 1px solid #1f1f23;
+  transition: transform 0.3s ease;   /* ← agregar */
 }
 
 .agenda__item:first-child {
@@ -1612,11 +1613,24 @@ cantidad-label {
   font-weight: 600;
   margin: 0;
   color: #f4f4f5;
+  transition: color 0.3s ease;
 }
 
 .agenda__speaker {
   font-size: 0.8rem;
   color: #71717a;
+}
+
+.agenda__item:hover {
+  transform: translateX(8px);
+}
+
+.agenda__item:hover .agenda__charla {
+  color: var(--rc-red);
+}
+
+.agenda__item:hover .agenda__speaker {
+  color: var(--rc-text-soft);
 }
 
 .link-txt {
