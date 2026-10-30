@@ -321,7 +321,12 @@ footer {
   min-height: 420px;
   border: 0;
   display: block;
-  filter: invert(90%) hue-rotate(180deg);
+}
+
+@media (min-width: 768px) {
+  .mapa-iframe {
+    filter: invert(90%) hue-rotate(180deg);
+  }
 }
 
 .tamanio-mapa {
@@ -1841,4 +1846,134 @@ cantidad-label {
   background-color: #1a1a1e;
   border-color: #ffffff;
   color: #ffffff;
+}
+
+@media (min-width: 992px) {
+  .faq-layout {
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto 1fr;
+    column-gap: 48px;
+    grid-template-areas:
+      "encabezado lista"
+      "contacto lista";
+  }
+
+  .faq-contacto {
+    align-self: start;
+  }
+}
+
+.faq-titulo {
+  font-size: clamp(28px, 3vw, 40px);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+}
+
+.faq-descripcion {
+  color: var(--rc-text-mute);
+  line-height: 1.5;
+}
+
+.faq-item {
+  background-color: var(--rc-surface);
+  border: 1px solid var(--rc-border);
+  border-radius: 16px;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.faq-item[open] {
+  background-color: #1a0b0d;
+  border-color: #3d1418;
+}
+
+.faq-pregunta {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 24px;
+  font-weight: 800;
+}
+
+.faq-pregunta::-webkit-details-marker {
+  display: none;
+}
+
+.faq-pregunta::after {
+  content: "+";
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--rc-surface-2);
+  color: var(--rc-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  line-height: 1;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.faq-item[open] .faq-pregunta::after {
+  background-color: var(--rc-red);
+  transform: rotate(45deg);
+}
+
+.faq-pregunta:hover::after {
+  background-color: var(--rc-red-dark);
+}
+
+.faq-respuesta {
+  color: var(--rc-text-soft);
+  font-size: 14px;
+  line-height: 1.6;
+  padding: 0 24px 20px;
+  margin: 0;
+}
+
+/* boton flotante de whatsapp */
+.btn-whatsapp-flotante {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 1040;
+  background-color: #25d366;
+  color: var(--rc-white);
+  font-weight: 800;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 12px 22px;
+  border-radius: 999px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.btn-whatsapp-flotante i {
+  font-size: 22px;
+  line-height: 1;
+}
+
+.btn-whatsapp-flotante:hover {
+  background-color: #1ebe5d;
+  color: var(--rc-white);
+  transform: translateY(-3px);
+}
+
+@media (max-width: 575.98px) {
+  .btn-whatsapp-flotante {
+    right: 16px;
+    bottom: 16px;
+    padding: 10px 18px;
+    font-size: 14px;
+  }
 }
