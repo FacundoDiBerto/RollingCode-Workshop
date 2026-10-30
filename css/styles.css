@@ -958,22 +958,20 @@ cantidad-label {
   color: var(--rc-red);
 }
 
-.campo-input-wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-  background-color: #121215;
-  border: 1px solid #27272a;
-  border-radius: 0.6rem;
-  padding: 0.55rem 0.75rem;
+.campo-input-wrapper:focus-within {
+  border-color: var(--rc-white);
 }
 
-.campo-input-wrapper--error {
+.campo-input-wrapper:has(.campo-input:user-invalid) {
   border-color: #dc2626;
 }
 
-.campo-input-wrapper--valido {
-  border-color: #27272a;
+.campo-input-wrapper:has(.campo-input:user-valid) {
+  border-color: #198754;
+}
+
+.campo-input-wrapper:has(.campo-input:user-invalid) + .campo-mensaje--error {
+  display: block !important;
 }
 
 .campo-icono {
@@ -990,10 +988,12 @@ cantidad-label {
   font-size: 0.85rem;
   width: 100%;
   outline: none;
+  text-transform: uppercase;
 }
 
 .campo-input::placeholder {
   color: #52525b;
+  text-transform: none;
 }
 
 .campo-estado {
@@ -1456,8 +1456,9 @@ cantidad-label {
   cursor: pointer;
 }
 
-.carrusel-speakers {
-  padding-bottom: 40px;
+.carrusel-speakers,
+#carruselTestimonios {
+  padding-bottom: 44px;
 }
 
 .carrusel-speakers .speaker-card {
@@ -1519,19 +1520,23 @@ cantidad-label {
 
 .carrusel-puntos {
   margin-bottom: 0;
+  bottom: 4px;
+  gap: 6px;
 }
 
 .carrusel-puntos [data-bs-target] {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   border-radius: 999px;
   border: 0;
-  margin: 0 4px;
+  margin: 0;
   background-color: #3a3a40;
   opacity: 1;
+  transition: width 0.3s ease, background-color 0.3s ease;
 }
 
 .carrusel-puntos .active {
+  width: 28px;
   background-color: var(--rc-red);
 }
 
