@@ -1725,7 +1725,7 @@ cantidad-label {
   background-color: var(--rc-red);
   height: 100%;
   border-radius: 999px;
-  width: 63%;
+  width: 100%;
 }
 
 .tarjeta-plan {
