@@ -1855,6 +1855,13 @@ cantidad-label {
   transform: translateY(-2px);
 }
 
+.btn-agotado,
+.btn-agotado:hover {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
 .btn-comprar-outline {
   background-color: transparent;
   color: #ffffff;
