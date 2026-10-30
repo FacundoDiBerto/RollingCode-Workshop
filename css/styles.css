@@ -1849,3 +1849,30 @@ cantidad-label {
   border-color: #ffffff;
   color: #ffffff;
 }
+
+#comunidad .card {
+  background-color: var(--rc-surface);
+  border: 1px solid var(--rc-border);
+  color: var(--rc-white);
+}
+
+#comunidad .row.mb-5 > div:first-child .card {
+  background: var(--rc-gradient);
+  border: none;
+}
+
+#comunidad .row.mb-5 .card .display-5 {
+  color: var(--rc-red);
+}
+
+#comunidad .row.mb-5 > div:first-child .card .display-5 {
+  color: var(--rc-white);
+}
+
+#comunidad .bi-quote {
+  color: var(--rc-red);
+}
+
+#comunidad .bi-person-circle {
+  color: var(--rc-text-mute);
+}
