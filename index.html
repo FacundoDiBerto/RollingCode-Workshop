@@ -1864,27 +1864,97 @@
             Lo que dicen quienes ya pasaron por Rolling Code
           </h2>
           <p class="agenda-text fs-5 mb-5"></p>
-        </div>
-        <!-- Estadísticas -->
-        <div class="row g-3 g-lg-4 mb-5">
-          <div class="col-12 col-lg-8">
-            <div class="card h-100 p-4 rounded-4">
-              <div class="card-body p-0"></div>
+
+          <!-- Estadísticas -->
+          <div class="row g-3 g-lg-4 mb-5">
+            <div class="col-12 col-lg-8">
+              <div class="card h-100 p-4 rounded-4">
+                <div class="card-body p-0"></div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-4">
+              <div class="card h-100 p-4 rounded-4">
+                <div class="card-body p-0"></div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-12">
+              <div class="card h-100 p-4 rounded-4">
+                <div class="card-body p-0"></div>
+              </div>
             </div>
           </div>
-          <div class="col-6 col-lg-4">
-            <div class="card h-100 p-4 rounded-4">
-              <div class="card-body p-0"></div>
+
+          <!-- Testimonios: ESCRITORIO (lg en adelante) -->
+          <div class="d-none d-lg-block">
+            <div class="row row-cols-lg-3 g-4">
+              <div class="col">
+                <div class="card h-100 p-4 rounded-4">
+                  <div class="card-body p-0 d-flex flex-column"></div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 p-4 rounded-4">
+                  <div class="card-body p-0 d-flex flex-column"></div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 p-4 rounded-4">
+                  <div class="card-body p-0 d-flex flex-column"></div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-6 col-lg-12">
-            <div class="card h-100 p-4 rounded-4">
-              <div class="card-body p-0"></div>
+
+          <!-- Testimonios: CELULAR Y TABLET (menos de lg): carrusel -->
+          <div class="d-lg-none">
+            <div
+              id="carruselTestimonios"
+              class="carousel slide"
+              data-bs-touch="true"
+              data-bs-interval="false"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="card p-4 rounded-4">
+                    <div class="card-body p-0 d-flex flex-column"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card p-4 rounded-4">
+                    <div class="card-body p-0 d-flex flex-column"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card p-4 rounded-4">
+                    <div class="card-body p-0 d-flex flex-column"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-indicators carrusel-puntos">
+                <button
+                  type="button"
+                  data-bs-target="#carruselTestimonios"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carruselTestimonios"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carruselTestimonios"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="d-none d-lg-block">
-          
         </div>
       </section>
     </main>
