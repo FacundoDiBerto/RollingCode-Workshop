@@ -958,6 +958,16 @@ cantidad-label {
   color: var(--rc-red);
 }
 
+.campo-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #121215;
+  border: 1px solid #3f3f46;
+  border-radius: 0.6rem;
+  padding: 0.55rem 0.75rem;
+}
+
 .campo-input-wrapper:focus-within {
   border-color: var(--rc-white);
 }
@@ -968,10 +978,6 @@ cantidad-label {
 
 .campo-input-wrapper:has(.campo-input:user-valid) {
   border-color: #198754;
-}
-
-.campo-input-wrapper:has(.campo-input:user-invalid) + .campo-mensaje--error {
-  display: block !important;
 }
 
 .campo-icono {
