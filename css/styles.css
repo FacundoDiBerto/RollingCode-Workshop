@@ -2011,3 +2011,23 @@ cantidad-label {
   object-fit: cover;
   flex-shrink: 0;
 }
+
+.footer-info-titulo {
+  color: var(--rc-text-mute);
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.footer-info-link {
+  color: var(--rc-white);
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-info-link:hover {
+  color: var(--rc-red);
+}
