@@ -329,8 +329,6 @@ footer {
   }
 }
 
-
-
 .tamanio-mapa {
   max-width: 600px;
 }
@@ -1848,4 +1846,41 @@ cantidad-label {
   background-color: #1a1a1e;
   border-color: #ffffff;
   color: #ffffff;
+}
+
+/* seccion preguntas frecuentes */
+.faq-layout {
+  display: grid;
+  gap: 24px;
+  grid-template-areas:
+    "encabezado"
+    "lista"
+    "contacto";
+}
+
+.faq-encabezado {
+  grid-area: encabezado;
+}
+
+.faq-lista {
+  grid-area: lista;
+}
+
+.faq-contacto {
+  grid-area: contacto;
+}
+
+@media (min-width: 992px) {
+  .faq-layout {
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto 1fr;
+    column-gap: 48px;
+    grid-template-areas:
+      "encabezado lista"
+      "contacto lista";
+  }
+
+  .faq-contacto {
+    align-self: start;
+  }
 }
