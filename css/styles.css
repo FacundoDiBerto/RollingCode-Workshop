@@ -1848,28 +1848,6 @@ cantidad-label {
   color: #ffffff;
 }
 
-/* seccion preguntas frecuentes */
-.faq-layout {
-  display: grid;
-  gap: 24px;
-  grid-template-areas:
-    "encabezado"
-    "lista"
-    "contacto";
-}
-
-.faq-encabezado {
-  grid-area: encabezado;
-}
-
-.faq-lista {
-  grid-area: lista;
-}
-
-.faq-contacto {
-  grid-area: contacto;
-}
-
 @media (min-width: 992px) {
   .faq-layout {
     grid-template-columns: 1fr 2fr;
@@ -1959,22 +1937,6 @@ cantidad-label {
   line-height: 1.6;
   padding: 0 24px 20px;
   margin: 0;
-}
-
-.faq-contacto {
-  background: var(--rc-gradient);
-  border-radius: 24px;
-  padding: 28px 24px;
-}
-
-.faq-contacto-titulo {
-  font-size: 22px;
-  font-weight: 800;
-}
-
-.faq-contacto-texto {
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.85);
 }
 
 /* boton flotante de whatsapp */
